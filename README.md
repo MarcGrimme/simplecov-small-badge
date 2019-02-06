@@ -1,6 +1,6 @@
 # SimpleCovSmallBadge
 
-[![Build Status](...)](...)
+[![Build Status](ci status)](https://api.travis-ci.org/MarcGrimme/simplecov-small-badge.svg?branch=master)
 [![Depfu](...)](...)
 ![Coverage]()
 

@@ -1,7 +1,7 @@
 # SimpleCovSmallBadge
 
 [![Build Status](https://api.travis-ci.org/MarcGrimme/simplecov-small-badge.svg?branch=master)](https://secure.travis-ci.org/MarcGrimme/simplecov-small-badge)
-[![Depfu](...)](...)
+[![Depfu](https://depfu.com/projects/6900/badges)](https://depfu.com/repos/MarcGrimme/simplecov-small-badge)
 ![Coverage]()
 
 *SimpleCovBadge* is a gem that can be added to the `Gemfile` and will produce a file called `coverage_badge.png` in the `coverage` directory.

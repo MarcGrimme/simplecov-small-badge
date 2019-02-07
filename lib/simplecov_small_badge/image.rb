@@ -83,7 +83,7 @@ module SimpleCovSmallBadge
     end
 
     def pango_coverage(coverage, state)
-      pango_text "#{coverage}%", @config.coverage_font,
+      pango_text coverage, @config.coverage_font,
                  @config.coverage_font_color, @config.coverage_font_size,
                  coverage_background(state)
     end

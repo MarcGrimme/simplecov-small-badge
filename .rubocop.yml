@@ -1,7 +1,0 @@
-Metrics/ModuleLength:
-  Exclude:
-    - "spec/*_spec.rb"
-
-Metrics/BlockLength:
-  Exclude:
-    - "spec/*_spec.rb"

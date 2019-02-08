@@ -83,7 +83,7 @@ module SimpleCovSmallBadge
     end
 
     def pango_coverage(coverage, state)
-      pango_text coverage, @config.coverage_font,
+      pango_text " #{coverage} &#37; ", @config.coverage_font,
                  @config.coverage_font_color, @config.coverage_font_size,
                  coverage_background(state)
     end
@@ -105,7 +105,7 @@ module SimpleCovSmallBadge
     end
 
     def title(suffix)
-      "#{@config.title_prefix} #{suffix}"
+      " #{@config.title_prefix} #{suffix} "
     end
 
     def output_path

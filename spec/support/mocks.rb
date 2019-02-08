@@ -5,8 +5,8 @@ module TestSimpleCovSmallBadge
     # rubocop:disable Metrics/LineLength
     def pango_text_match(title = 'scov total', color = 'green', cov = '100%')
       %(<span foreground="white"
-             background="#595959"             size="12000"             font="Helvetica"        >#{title}</span><span foreground="white"
-             background="#{color}"             size="14000"             font="Helvetica-Narrow-Bold"        >#{cov}</span>)
+             background="#595959"             size="12000"             font="Helvetica"        > #{title} </span><span foreground="white"
+             background="#{color}"             size="14000"             font="Helvetica-Narrow-Bold"        > #{cov} &#37; </span>)
     end
     # rubocop:enable Metrics/LineLength
 
@@ -14,7 +14,7 @@ module TestSimpleCovSmallBadge
     def mock_mini_magick_stack(stack = instance_double('Stack'))
       allow(stack).to receive_message_chain('clone.+')
       allow(stack).to receive(:alpha).with('extract')
-      allow(stack).to receive(:draw).with('fill black polygon 0,0 0,5 5,0 fill white circle 5,5 5,0')
+      allow(stack).to receive(:draw).with('fill black polygon 0,0 0,3 3,0 fill white circle 3,3 3,0')
       allow(stack).to receive(:flip)
       allow(stack).to receive(:flop)
       allow(stack).to receive(:compose).with('Multiply')

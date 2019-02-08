@@ -26,7 +26,7 @@ module SimpleCovSmallBadge
         filename_prefix: 'coverage_badge',
         log_level: 'info',
         rounded_border: true,
-        rounded_edge_radius: 5
+        rounded_edge_radius: 3
       }
     end
     # rubocop:enable Metrics/MethodLength

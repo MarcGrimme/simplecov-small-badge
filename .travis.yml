@@ -15,10 +15,6 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
-  local-dir: badges
   verbose: true
   on:
     branch: master
-env:
-  global:
-    secure: eOQWuRoA6ORgD6DhzSvOtehonqMaZEMWyGxzyJbUbUUf3388SXs60blLdWDTovLHjuhIOa/NMpG0PdShLu4GiwfzmDAZ25jePAylQry7uT4f9WYVnGwCxcd4IDAYriUHm9Y36dakuilsrr1Vff6hzlNIgwYzuSg5/IQxPG1I3JUkWwKW8SF2rLIbjEh0bDgqNfWxW/1VHUE1g8xhBQhTBBjvmoFeUvcnuEzKxDJbHtI4+6nodMbRzDWiSF5xRbyzlQAJ8AMJPpuX7fUUO7wDlV+SxR4gLWzTjx7tF/NLZ3t/i33WhkSHYH/bLketkNreUQmpTHLNC1jFopPykw4WiR4z4LuFWdKzWAFvgzIqnngKDpXOGaAx/0cH2dRshOj6C36JV3t5W+r1qsDNAA1y5qVcaFmg+hgbWIbLVdiVw5JR1eH8pjo1/FT+WVwP6HosnMrJhkDOmEVPlj3Wc5A0J4NMiplR9oQ2psNq2zEKkfRlPmCurK+9Qb8xkd2NLpbCzBmd7veDvhZfG3WI1CqPgDajwYIVMuyKtbHFm/aTARIJehrZD48hRLzDh4JAla36EMnA6uBW7GggqlW/4gC97Qe1Xl7r97IZYe30iU2T0LDMbcgbPRprd1nYWIHM4U5VOyAzWxUNszN7NNl62mvNDx7EmNHSRPL/Ihophbqgz1s=

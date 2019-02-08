@@ -20,10 +20,10 @@ describe SimpleCovSmallBadge::Formatter do
       it do
         allow(SimpleCov).to receive(:minimum_coverage).and_return(100)
         mock_mini_magick(name: 'library', title: 'scov library',
-                         color: 'green', coverage: '100',
+                         color: '#4dc71f', coverage: '100',
                          stack: stack, convert:
                          mock_mini_magick(name: 'total', title: 'scov total',
-                                          color: 'green', coverage: '100',
+                                          color: '#4dc71f', coverage: '100',
                                           stack: stack))
         result = mock_result(100, 'library': mock_result_group(100))
         expect(subject.format(result)).to be_truthy
@@ -32,10 +32,10 @@ describe SimpleCovSmallBadge::Formatter do
       it do
         allow(SimpleCov).to receive(:minimum_coverage).and_return(90)
         mock_mini_magick(name: 'library', title: 'scov library',
-                         color: 'green', coverage: '90',
+                         color: '#4dc71f', coverage: '90',
                          stack: stack, convert:
                          mock_mini_magick(name: 'total', title: 'scov total',
-                                          color: 'green', coverage: '90',
+                                          color: '#4dc71f', coverage: '90',
                                           stack: stack))
         result = mock_result(90, 'library': mock_result_group(90))
         expect(subject.format(result)).to be_truthy
@@ -74,7 +74,7 @@ describe SimpleCovSmallBadge::Formatter do
       it do
         allow(SimpleCov).to receive(:minimum_coverage).and_return(90)
         mock_mini_magick(name: 'library', title: 'scov library',
-                         color: 'green', coverage: '90',
+                         color: '#4dc71f', coverage: '90',
                          stack: stack, convert:
                          mock_mini_magick(name: 'total', title: 'scov total',
                                           color: 'red', coverage: '89',

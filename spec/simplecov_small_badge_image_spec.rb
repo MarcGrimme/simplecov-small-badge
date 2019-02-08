@@ -14,11 +14,11 @@ describe SimpleCovSmallBadge::Image do
         it do
           stack = mock_mini_magick_stack
           mock_mini_magick(name: 'library', title: 'scov library',
-                           color: 'green', coverage: '100',
+                           color: '#4dc71f', coverage: '100',
                            stack: stack,
                            convert:
                            mock_mini_magick(name: 'total', title: 'scov total',
-                                            color: 'green', coverage: '100',
+                                            color: '#4dc71f', coverage: '100',
                                             stack: stack))
           expect(subject.coverage(100, 'good', 'library': [100, 1, 'good']))
             .to be_truthy
@@ -29,7 +29,7 @@ describe SimpleCovSmallBadge::Image do
         it do
           stack = mock_mini_magick_stack
           mock_mini_magick(name: 'total', title: 'scov total',
-                           color: 'green', coverage: '100',
+                           color: '#4dc71f', coverage: '100',
                            stack: stack)
           expect(subject.coverage(100, 'good')).to be_truthy
         end
@@ -42,7 +42,7 @@ describe SimpleCovSmallBadge::Image do
               .new(rounded_border: false))
           stack = mock_mini_magick_stack
           mock_mini_magick(name: 'total', title: 'scov total',
-                           color: 'green', coverage: '100',
+                           color: '#4dc71f', coverage: '100',
                            rounded_border: false,
                            stack: stack)
           expect(subject.coverage(100, 'good')).to be_truthy

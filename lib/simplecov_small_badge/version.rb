@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-module SimpleCovBadge
-  VERSION = '2.0.3'
+module SimpleCovSmallBadge
+  VERSION = '0.1'
 end

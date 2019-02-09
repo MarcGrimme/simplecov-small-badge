@@ -50,13 +50,19 @@ SimpleCov.start do
 end
 ```
 
-## Integration into CI via github-pages
+## Integration into Travis-CI via github-pages
 
-See [SimpleCovBadge - if you want to store your coverage in github pages](https://github.com/matthew342/simplecov-badge#if-you-want-to-store-your-coverage-reports-in-github-pages)
+This process is split into two steps.
+
+1. You need to create an access token for you github repository that can be configured to travis to allow password-less pushing. This is described in [Github Help - Authenticating to GitHub / Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
+
+2. Configure travis to push the result to github-pages inspired from [the Travis description](https://docs.travis-ci.com/user/deployment/pages/) and configuration to be found in [.travis.yml](.travis.yml)
+
+3. Integrate your badge into the README.md as follows ``![Coverage](https://marcgrimme.github.io/simplecov-small-badge/badges/coverage_badge_total.png)``
 
 ## Configuration Options
 
-The behaviour of `SimpleCovBadge` can be influenced by configuration options. 
+The behaviour of `SimpleCovSmallBadge` can be influenced by configuration options as defined in the [configuration class](lib/simplecov_small_badge/configuration.rb).
 
 ## Development
 
@@ -66,7 +72,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/marcgrimme/simplecov_small_badge/fork )
+1. Fork it ( https://github.com/marcgrimme/simplecov-small-badge/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

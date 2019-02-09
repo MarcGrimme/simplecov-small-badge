@@ -5,7 +5,7 @@ require 'simplecov_small_badge/version'
 
 Gem::Specification.new do |s|
   s.name        = 'simplecov-small-badge'
-  s.version     = SimpleCovBadge::VERSION
+  s.version     = SimpleCovSmallBadge::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Marc Grimme']
   s.email       = ['marc.grimme at gmail dot com']

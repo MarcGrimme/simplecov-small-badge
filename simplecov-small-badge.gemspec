@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = 'simplecov-small-badge'
 
   s.add_dependency 'mini_magick'
+  s.add_dependency 'repo-small-badge'
   s.add_dependency 'simplecov'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'

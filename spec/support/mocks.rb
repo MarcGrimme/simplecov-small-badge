@@ -6,7 +6,7 @@ module TestSimpleCovSmallBadge
     def pango_text_match(title = 'scov total', color = 'green', cov = '100%')
       %(<span foreground="white"
              background="#595959"             size="16000"             font="Helvetica"        > #{title} </span><span foreground="white"
-             background="#{color}"             size="16000"             font="Helvetica-Narrow-Bold"        > #{cov} &#37; </span>)
+             background="#{color}"             size="16000"             font="Helvetica-Narrow-Bold"        > #{cov} </span>)
     end
     # rubocop:enable Metrics/LineLength
 

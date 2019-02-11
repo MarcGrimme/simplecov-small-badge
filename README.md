@@ -1,5 +1,6 @@
 # SimpleCovSmallBadge
 
+[![Gem Version](https://badge.fury.io/rb/simplecov-small-badge.svg)](https://badge.fury.io/rb/simplecov-small-badge)
 [![Build Status](https://api.travis-ci.org/MarcGrimme/simplecov-small-badge.svg?branch=master)](https://secure.travis-ci.org/MarcGrimme/simplecov-small-badge)
 [![Depfu](https://badges.depfu.com/badges/48a6c1c7c649f62eede6ffa2be843180/count.svg)](https://depfu.com/github/MarcGrimme/simplecov-small-badge?project_id=6900)
 ![Coverage](https://marcgrimme.github.io/simplecov-small-badge/badges/coverage_badge_total.png)

@@ -24,6 +24,7 @@ module SimpleCovSmallBadge
         coverage_font_size: 16,
         badge_height: 30,
         filename_prefix: 'coverage_badge',
+        output_path: SimpleCov.coverage_path,
         log_level: 'info',
         rounded_border: true,
         rounded_edge_radius: 3
@@ -40,6 +41,14 @@ module SimpleCovSmallBadge
     def initialize(**opts)
       SimpleCovSmallBadge::Configuration
         .options.merge(opts).each { |opt, v| send(:"#{opt}=", v) }
+    end
+
+    def to_hash
+      hash = {}
+      instance_variables.each do |var|
+        hash[var.to_s.delete('@').to_sym] = instance_variable_get(var)
+      end
+      hash
     end
   end
 end

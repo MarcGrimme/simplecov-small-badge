@@ -9,6 +9,7 @@ describe SimpleCovSmallBadge::Formatter do
   describe '#format' do
     context 'bad result' do
       it do
+        allow(SimpleCov).to receive(:minimum_coverage).and_return(90)
         mock_mini_magick(name: 'total', title: 'scov total',
                          color: 'red', coverage: '50',
                          stack: stack)

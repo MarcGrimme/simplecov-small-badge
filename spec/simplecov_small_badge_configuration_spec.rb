@@ -8,4 +8,8 @@ describe SimpleCovSmallBadge::Configuration do
       it { expect(subject.send(opt)).to eq(value) }
     end
   end
+
+  context '#to_hash' do
+    it { expect(subject.to_hash).to eq(described_class.options) }
+  end
 end

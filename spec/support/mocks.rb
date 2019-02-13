@@ -42,7 +42,7 @@ module TestSimpleCovSmallBadge
         allow(convert).to receive(:composite)
       end
       allow(convert).to receive(:<<)
-        .with("#{SimpleCov.coverage_path}/coverage_badge_#{keys[:name]}.png")
+        .with("#{SimpleCov.coverage_path}/coverage_badge_#{keys[:name]}.svg")
       convert
     end
     # rubocop:enable Metrics/MethodLength, Metrics/AbcSize

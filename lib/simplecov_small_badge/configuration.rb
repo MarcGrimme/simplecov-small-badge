@@ -8,7 +8,7 @@ module SimpleCovSmallBadge
     # rubocop:disable Metrics/MethodLength
     def self.options
       {
-        format: 'png',
+        format: 'svg',
         with_groups: false,
         background: 'transparent',
         title_prefix: 'scov',

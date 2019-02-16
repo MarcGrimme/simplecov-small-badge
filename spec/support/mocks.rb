@@ -2,50 +2,33 @@
 
 module TestSimpleCovSmallBadge
   module Mocks
-    # rubocop:disable Metrics/LineLength
-    def pango_text_match(title = 'scov total', color = 'green', cov = '100%')
-      %(<span foreground="white"
-             background="#595959"             size="16000"             font="Helvetica"        > #{title} </span><span foreground="white"
-             background="#{color}"             size="16000"             font="Helvetica-Narrow-Bold"        > #{cov} </span>)
+    # rubocop:disable Metrics/ParameterLists, Metrics/AbcSize
+    def mock_repo_badge_image(cov: 100, name: 'total',
+                              title: 'total',
+                              state: 'good',
+                              config: {},
+                              mock: instance_double('Image'))
+      config = map_config_options(config, state)
+      allow(RepoSmallBadge::Image).to receive(:new)
+        .with(config).and_return(mock)
+      allow(mock).to receive(:config_merge).with(config).and_return(config)
+      allow(mock).to receive(:badge).with(name, title, cov)
+      mock
     end
-    # rubocop:enable Metrics/LineLength
+    # rubocop:enable Metrics/ParameterLists, Metrics/AbcSize
 
-    # rubocop:disable Metrics/LineLength, Metrics/AbcSize
-    def mock_mini_magick_stack(stack = instance_double('Stack'))
-      allow(stack).to receive_message_chain('clone.+')
-      allow(stack).to receive(:alpha).with('extract')
-      allow(stack).to receive(:draw).with('fill black polygon 0,0 0,3 3,0 fill white circle 3,3 3,0')
-      allow(stack).to receive(:flip)
-      allow(stack).to receive(:flop)
-      allow(stack).to receive(:compose).with('Multiply')
-      allow(stack).to receive(:composite)
-      allow(stack).to receive(:stack).and_yield(stack)
-      stack
-    end
-    # rubocop:enable Metrics/LineLength, Metrics/AbcSize
-
-    # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
-    def mock_mini_magick(**keys)
-      keys[:convert] ||= instance_double('Convert')
-      convert = keys[:convert]
-      pango_text = pango_text_match(keys[:title], keys[:color], keys[:coverage])
-      allow(MiniMagick::Tool::Convert)
-        .to receive(:new).and_yield(keys[:convert])
-      allow(convert).to receive(:gravity).with('center')
-      allow(convert).to receive(:background).with('transparent')
-      allow(convert).to receive(:pango).with(pango_text)
-
-      if keys.fetch(:rounded_border, true)
-        allow(convert).to receive(:stack).and_yield(keys[:stack])
-        allow(convert).to receive(:compose).with('CopyOpacity')
-        allow(convert).to receive(:alpha).with('off')
-        allow(convert).to receive(:composite)
+    def map_config_options(config_hash, state)
+      hash = {}
+      SimpleCovSmallBadge::Configuration.options.merge(config_hash)
+                                        .map do |key, value|
+        key = key.to_s
+                 .sub(/^coverage_background_#{state}/, 'value_background')
+                 .to_sym
+        key = key.to_s.sub(/^coverage_/, 'value_').to_sym
+        hash[key] = value
       end
-      allow(convert).to receive(:<<)
-        .with("#{SimpleCov.coverage_path}/coverage_badge_#{keys[:name]}.svg")
-      convert
+      hash
     end
-    # rubocop:enable Metrics/MethodLength, Metrics/AbcSize
 
     def mock_result(total_cov, groups_hash = {})
       result_double = instance_double('Result')

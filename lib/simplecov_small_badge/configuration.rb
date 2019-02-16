@@ -10,24 +10,26 @@ module SimpleCovSmallBadge
       {
         format: 'svg',
         with_groups: false,
-        background: 'transparent',
+        background: '#fff',
         title_prefix: 'scov',
-        title_background: '#595959',
-        title_font: 'Helvetica',
-        title_font_size: 16,
-        title_font_color: 'white',
-        coverage_background_bad: 'red',
-        coverage_background_unknown: 'yellow',
+        title_background: '#555',
+        font: 'Helvetica',
+        font_size: 16,
+        title_color: '#fff',
+        coverage_background_bad: '#ff0000',
+        coverage_background_unknown: '#cccc00',
         coverage_background_good: '#4dc71f',
         coverage_font: 'Helvetica-Narrow-Bold',
-        coverage_font_color: 'white',
+        coverage_font_color: '#fff',
         coverage_font_size: 16,
-        badge_height: 30,
+        badge_height: 20,
+        badge_width: 200,
         filename_prefix: 'coverage_badge',
         output_path: SimpleCov.coverage_path,
         log_level: 'info',
         rounded_border: true,
-        rounded_edge_radius: 3
+        rounded_edge_radius: 3,
+        percent_sign: '%'
       }
     end
     # rubocop:enable Metrics/MethodLength

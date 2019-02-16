@@ -10,35 +10,30 @@ describe SimpleCovSmallBadge::Formatter do
     context 'bad result' do
       it do
         allow(SimpleCov).to receive(:minimum_coverage).and_return(90)
-        mock_mini_magick(name: 'total', title: 'scov total',
-                         color: 'red', coverage: '50',
-                         stack: stack)
+        mock_repo_badge_image(cov: '50%', state: 'bad')
         result = mock_result(50)
         expect(subject.format(result)).to be_truthy
       end
     end
+
     context 'good result' do
       it do
         allow(SimpleCov).to receive(:minimum_coverage).and_return(100)
-        mock_mini_magick(name: 'library', title: 'scov library',
-                         color: '#4dc71f', coverage: '100',
-                         stack: stack, convert:
-                         mock_mini_magick(name: 'total', title: 'scov total',
-                                          color: '#4dc71f', coverage: '100',
-                                          stack: stack))
-        result = mock_result(100, 'library': mock_result_group(100))
+        image_mock = mock_repo_badge_image(title: 'total', name: 'total',
+                                           cov: '100%')
+        mock_repo_badge_image(title: 'library', name: 'library',
+                              cov: '100%', mock: image_mock)
+        result = mock_result(100, 'library' => mock_result_group(100))
         expect(subject.format(result)).to be_truthy
       end
 
       it do
         allow(SimpleCov).to receive(:minimum_coverage).and_return(90)
-        mock_mini_magick(name: 'library', title: 'scov library',
-                         color: '#4dc71f', coverage: '90',
-                         stack: stack, convert:
-                         mock_mini_magick(name: 'total', title: 'scov total',
-                                          color: '#4dc71f', coverage: '90',
-                                          stack: stack))
-        result = mock_result(90, 'library': mock_result_group(90))
+        image_mock = mock_repo_badge_image(title: 'total', name: 'total',
+                                           cov: '90%')
+        mock_repo_badge_image(title: 'library', name: 'library',
+                              cov: '90%', mock: image_mock)
+        result = mock_result(90, 'library' => mock_result_group(90))
         expect(subject.format(result)).to be_truthy
       end
     end
@@ -46,13 +41,11 @@ describe SimpleCovSmallBadge::Formatter do
     context 'bad result' do
       it do
         allow(SimpleCov).to receive(:minimum_coverage).and_return(91)
-        mock_mini_magick(name: 'library', title: 'scov library',
-                         color: 'red', coverage: '90',
-                         stack: stack, convert:
-                         mock_mini_magick(name: 'total', title: 'scov total',
-                                          color: 'red', coverage: '90',
-                                          stack: stack))
-        result = mock_result(90, 'library': mock_result_group(90))
+        image_mock = mock_repo_badge_image(title: 'total', name: 'total',
+                                           cov: '90%', state: 'bad')
+        mock_repo_badge_image(title: 'library', name: 'library',
+                              cov: '90%', state: 'bad', mock: image_mock)
+        result = mock_result(90, 'library' => mock_result_group(90))
         expect(subject.format(result)).to be_truthy
       end
     end
@@ -60,13 +53,11 @@ describe SimpleCovSmallBadge::Formatter do
     context 'unknown result' do
       it do
         allow(SimpleCov).to receive(:minimum_coverage).and_return(nil)
-        mock_mini_magick(name: 'library', title: 'scov library',
-                         color: 'yellow', coverage: '90',
-                         stack: stack, convert:
-                         mock_mini_magick(name: 'total', title: 'scov total',
-                                          color: 'yellow', coverage: '90',
-                                          stack: stack))
-        result = mock_result(90, 'library': mock_result_group(90))
+        image_mock = mock_repo_badge_image(title: 'total', name: 'total',
+                                           cov: '90%', state: 'unknown')
+        mock_repo_badge_image(title: 'library', name: 'library',
+                              cov: '90%', state: 'unknown', mock: image_mock)
+        result = mock_result(90, 'library' => mock_result_group(90))
         expect(subject.format(result)).to be_truthy
       end
     end
@@ -74,13 +65,11 @@ describe SimpleCovSmallBadge::Formatter do
     context 'mixed result' do
       it do
         allow(SimpleCov).to receive(:minimum_coverage).and_return(90)
-        mock_mini_magick(name: 'library', title: 'scov library',
-                         color: '#4dc71f', coverage: '90',
-                         stack: stack, convert:
-                         mock_mini_magick(name: 'total', title: 'scov total',
-                                          color: 'red', coverage: '89',
-                                          stack: stack))
-        result = mock_result(89, 'library': mock_result_group(90))
+        image_mock = mock_repo_badge_image(title: 'total', name: 'total',
+                                           cov: '89%', state: 'bad')
+        mock_repo_badge_image(title: 'library', name: 'library',
+                              cov: '90%', state: 'good', mock: image_mock)
+        result = mock_result(89, 'library' => mock_result_group(90))
         expect(subject.format(result)).to be_truthy
       end
     end

@@ -5,7 +5,6 @@ require 'spec_helper'
 describe SimpleCovSmallBadge::Formatter do
   include TestSimpleCovSmallBadge::Mocks
 
-  let(:stack) { mock_mini_magick_stack }
   describe '#format' do
     context 'bad result' do
       it do

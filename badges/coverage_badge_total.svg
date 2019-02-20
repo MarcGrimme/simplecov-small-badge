@@ -1,6 +1,6 @@
-<svg contentScriptType="text/ecmascript" contentStyleType="text/css" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.0" height="20" width="100%">
+<svg contentScriptType="text/ecmascript" contentStyleType="text/css" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.0" height="20" width="120">
 
-<linearGradient id="smooth" x2="0" y2="100%">
+<linearGradient id="smooth" x2="0" y2="120">
 <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
 <stop offset="1" stop-opacity=".1"/>
 </linearGradient>

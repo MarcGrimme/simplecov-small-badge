@@ -9,13 +9,13 @@
 *SimpleCovBadge* is a gem that can be added to the `Gemfile` and will produce a file called `coverage_badge.png` in the `coverage` directory.
 It could be looking as follows dependent on how it is configured.
 
-...
+![Badge](https://marcgrimme.github.io/simplecov-small-badge/badges/coverage_badge_total.svg)
 
 The idea is to created a badge for [SimpleCov](https://github.com/colszowka/simplecov) to create a persistable image that shows the coverage in percent as a badge.
 
 ## Installation
 
-The badge creation is dependent on the [MiniMagic gem](https://github.com/colszowka/simplecov) which requires the [ImageMagick](http://www.imagemagick.org/index.php) software.
+The badge creation is dependent on the [Repo-small-badge gem](https://github.com/marcgrimme/repo-small-badge) which creates and SVG badge.
 It can be installed in your Ruby library or rails app as part of the `Gemfile` as follows.
 
 ```
@@ -29,26 +29,26 @@ This gem is an alternative and inspired by the great work in the other gem [simp
 
 Whereever you are integrating `SimpleCov` you can configure the `SimpleCovSmallBadge` gem as any formater can be configured. The default integration could looks as follows:
 
-```
+```ruby
+require 'simple-cov-small-badge'
+
 # Wherever your SimpleCov.start block is (spec_helper.rb, test_helper.rb, or .simplecov)
 SimpleCov.start do
-	require 'simple-cov-small-badge'
-	# add your normal SimpleCov configs
-	add_filter "/app/model"
-	# configure any options you want for SimpleCov::Formatter::BadgeFormatter
-	SimpleCovSmallBadge.configure do |config|
-      # switches on logging for convert
-      config.log_level = 'debug'
-      # does not created rounded borders
-      config.rounded_border = false
-      # set the background for the title to darkgrey
-      config.background_color = 'darkgrey'
-    end
-	# call SimpleCov::Formatter::BadgeFormatter after the normal HTMLFormatter
-	SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
-		SimpleCov::Formatter::HTMLFormatter,
-		SimpleCovSimpleBadge::Formatter,
-	]
+  # add your normal SimpleCov configs
+  add_filter "/app/model"
+  # call SimpleCov::Formatter::BadgeFormatter after the normal HTMLFormatter
+  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+    SimpleCov::Formatter::HTMLFormatter,
+    SimpleCovSimpleBadge::Formatter
+  ]
+end
+
+# configure any options you want for SimpleCov::Formatter::BadgeFormatter
+SimpleCovSmallBadge.configure do |config|
+  # does not created rounded borders
+  config.rounded_border = true
+  # set the background for the title to darkgrey
+  config.background_color = '#ffffcc'
 end
 ```
 

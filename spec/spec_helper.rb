@@ -9,7 +9,7 @@ SimpleCov.start do
     end
   end
 
-  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
+  SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new(
     [
       SimpleCov::Formatter::HTMLFormatter,
       SimpleCovSmallBadge::Formatter

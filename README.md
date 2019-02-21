@@ -30,17 +30,17 @@ This gem is an alternative and inspired by the great work in the other gem [simp
 Whereever you are integrating `SimpleCov` you can configure the `SimpleCovSmallBadge` gem as any formater can be configured. The default integration could looks as follows:
 
 ```ruby
-require 'simple-cov-small-badge'
+require 'simplecov_small_badge'
 
 # Wherever your SimpleCov.start block is (spec_helper.rb, test_helper.rb, or .simplecov)
 SimpleCov.start do
   # add your normal SimpleCov configs
   add_filter "/app/model"
   # call SimpleCov::Formatter::BadgeFormatter after the normal HTMLFormatter
-  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new([
     SimpleCov::Formatter::HTMLFormatter,
-    SimpleCovSimpleBadge::Formatter
-  ]
+    SimpleCovSmallBadge::Formatter
+  ])
 end
 
 # configure any options you want for SimpleCov::Formatter::BadgeFormatter
@@ -48,7 +48,7 @@ SimpleCovSmallBadge.configure do |config|
   # does not created rounded borders
   config.rounded_border = true
   # set the background for the title to darkgrey
-  config.background_color = '#ffffcc'
+  config.background = '#ffffcc'
 end
 ```
 

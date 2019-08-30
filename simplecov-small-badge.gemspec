@@ -12,7 +12,6 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.homepage    = 'https://github.com/marcgrimme/simplecov-small-badge'
   s.summary     = %(Small Badge generator for SimpleCov coverage tool for ruby)
-  s.description = %(Small Badge generator for SimpleCov coverage tool for ruby)
 
   s.rubyforge_project = 'simplecov-small-badge'
 

@@ -12,7 +12,7 @@ RubyCriticSmallBadge.configure do |config|
   config.minimum_score = ENV.fetch('RUBYCRITICLIMIT', 90.0)
 end
 RubyCritic::RakeTask.new do |task|
-  task.options = %(--formatter RubyCriticSmallBadge::Report
+  task.options = %(--custom-format RubyCriticSmallBadge::Report
 --minimum-score #{RubyCriticSmallBadge.config.minimum_score}
 --format html --format console)
   task.paths = FileList['lib/**/*.rb']

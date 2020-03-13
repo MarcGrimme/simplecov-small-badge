@@ -33,6 +33,9 @@
           <li class="sidebar-item">
             <a href="../../smells_index.html" class="project-nav-item smells-index-nav"><i class="fa fa-warning"></i>Smells</a>
           </li>
+          <li class="sidebar-item">
+            <a href="../../simple_cov_index.html" class="project-nav-item coverage-index-nav"><i class="fa fa-umbrella"></i>Coverage</a>
+          </li>
         </ul>
       </aside>
       <!-- /#sidebar-wrapper -->
@@ -44,7 +47,7 @@
     <div class="file-time">
       <span class="committed-at">
         
-          Updated <time class='js-timeago' datetime='2019-02-16 15:47:59 +0100'>2019-02-16 15:47:59 +0100</time>
+          Updated <time class='js-timeago' datetime='2020-02-28 14:01:26 -0600'>2020-02-28 14:01:26 -0600</time>
         
       </span>
     </div>
@@ -59,21 +62,21 @@
       <div class="col-md-8">
         <div class="row">
           <div class="col-md-1">
-            <div class="rating a big">
-              A
+            <div class="rating b big">
+              B
             </div>
           </div>
           <div class="code-statistics col-md-11">
             <div class="col-md-3">
-              <div><span class="metric">70</span><small> lines of codes</small></div>
-              <div><span class="metric">7</span><small> methods</small></div>
+              <div><span class="metric">75</span><small> lines of codes</small></div>
+              <div><span class="metric">8</span><small> methods</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">6.8</span><small> complexity/method</small></div>
-              <div><span class="metric">3</span><small> churn</small></div>
+              <div><span class="metric">6.5</span><small> complexity/method</small></div>
+              <div><span class="metric">4</span><small> churn</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">47.36</span><small> complexity</small></div>
+              <div><span class="metric">52.33</span><small> complexity</small></div>
               <div><span class="metric">0</span><small> duplications</small></div>
             </div>
           </div>
@@ -85,7 +88,7 @@
             <li><a href="#" id="toggle-code" class="toggle-button button">code</a></li>
             <li class="active">
               <a href="#" id="toggle-smells" class="toggle-button button">
-                10
+                9
                 smells
               </a>
             </li>
@@ -128,9 +131,9 @@ module SimpleCovSmallBadge
       &quot;#{percent}#{@config.percent_sign}&quot;
     end
 
-    def state(covered_percent)<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Utility-Function.md" target="_blank"><b>UtilityFunction</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#state doesn't depend on instance state (maybe move it to another class?)</span>          </div>  </li></ol>
-      if SimpleCov.minimum_coverage&amp;.positive?<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#state calls 'SimpleCov.minimum_coverage' 2 times</span>              <span>Locations:</span>                  <a href="formatter.html#L36" class="js-smell-location">0</a>                  <a href="formatter.html#L37" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Nil-Check.md" target="_blank"><b>NilCheck</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#state performs a nil-check</span>          </div>  </li></ol>
-        if covered_percent &gt;= SimpleCov.minimum_coverage<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#state calls 'SimpleCov.minimum_coverage' 2 times</span>              <span>Locations:</span>                  <a href="formatter.html#L36" class="js-smell-location">0</a>                  <a href="formatter.html#L37" class="js-smell-location">1</a>                  </div>  </li></ol>
+    def state(covered_percent)
+      if line_coverage_minimum&amp;.positive?<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Nil-Check.md" target="_blank"><b>NilCheck</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#state performs a nil-check</span>          </div>  </li></ol>
+        if covered_percent &gt;= line_coverage_minimum
           &#39;good&#39;
         else
           &#39;bad&#39;
@@ -140,13 +143,18 @@ module SimpleCovSmallBadge
       end
     end
 
+    def line_coverage_minimum<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Utility-Function.md" target="_blank"><b>UtilityFunction</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#line_coverage_minimum doesn't depend on instance state (maybe move it to another class?)</span>          </div>  </li></ol>
+      minimums = SimpleCov.minimum_coverage
+      minimums.is_a?(Hash) ? minimums[:line] : minimums
+    end
+
     def map_image_config(state)<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md" target="_blank"><b>TooManyStatements</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#map_image_config has approx 6 statements</span>          </div>  </li></ol>
       hash = {}
       @config.to_hash.map do |key, value|
-        key = key<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#map_image_config calls 'key; .to_s' 2 times</span>              <span>Locations:</span>                  <a href="formatter.html#L50" class="js-smell-location">0</a>                  <a href="formatter.html#L53" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Feature-Envy.md" target="_blank"><b>FeatureEnvy</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#map_image_config refers to 'key' more than self (maybe move it to another class?)</span>              <span>Locations:</span>                  <a href="formatter.html#L50" class="js-smell-location">0</a>                  <a href="formatter.html#L53" class="js-smell-location">1</a>                  </div>  </li></ol>
+        key = key<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#map_image_config calls 'key; .to_s' 2 times</span>              <span>Locations:</span>                  <a href="formatter.html#L55" class="js-smell-location">0</a>                  <a href="formatter.html#L58" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Feature-Envy.md" target="_blank"><b>FeatureEnvy</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#map_image_config refers to 'key' more than self (maybe move it to another class?)</span>              <span>Locations:</span>                  <a href="formatter.html#L55" class="js-smell-location">0</a>                  <a href="formatter.html#L58" class="js-smell-location">1</a>                  </div>  </li></ol>
               .to_s.sub(/^coverage_background_#{state}/, &#39;value_background&#39;)
               .to_sym
-        key = key.to_s.sub(/^coverage_/, &#39;value_&#39;).to_sym<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#map_image_config calls 'key; .to_s' 2 times</span>              <span>Locations:</span>                  <a href="formatter.html#L50" class="js-smell-location">0</a>                  <a href="formatter.html#L53" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Feature-Envy.md" target="_blank"><b>FeatureEnvy</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#map_image_config refers to 'key' more than self (maybe move it to another class?)</span>              <span>Locations:</span>                  <a href="formatter.html#L50" class="js-smell-location">0</a>                  <a href="formatter.html#L53" class="js-smell-location">1</a>                  </div>  </li></ol>
+        key = key.to_s.sub(/^coverage_/, &#39;value_&#39;).to_sym<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Duplicate-Method-Call.md" target="_blank"><b>DuplicateMethodCall</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#map_image_config calls 'key; .to_s' 2 times</span>              <span>Locations:</span>                  <a href="formatter.html#L55" class="js-smell-location">0</a>                  <a href="formatter.html#L58" class="js-smell-location">1</a>                  </div>  </li>  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Feature-Envy.md" target="_blank"><b>FeatureEnvy</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#map_image_config refers to 'key' more than self (maybe move it to another class?)</span>              <span>Locations:</span>                  <a href="formatter.html#L55" class="js-smell-location">0</a>                  <a href="formatter.html#L58" class="js-smell-location">1</a>                  </div>  </li></ol>
         hash[key] = value
       end
       hash

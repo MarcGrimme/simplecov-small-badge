@@ -3,12 +3,12 @@
 require 'simplecov'
 require 'byebug'
 
-SimpleCov.start do
-  module SimpleCovSmallBadge
-    class Formatter
-    end
+module SimpleCovSmallBadge
+  class Formatter
   end
+end
 
+SimpleCov.start do
   SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new(
     [
       SimpleCov::Formatter::HTMLFormatter,

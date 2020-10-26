@@ -2,7 +2,7 @@
 
 module TestSimpleCovSmallBadge
   module Mocks
-    # rubocop:disable Metrics/ParameterLists, Metrics/AbcSize
+    # rubocop:disable Metrics/ParameterLists
     def mock_repo_badge_image(cov: 100, name: 'total',
                               title: 'total',
                               state: 'good',
@@ -15,7 +15,7 @@ module TestSimpleCovSmallBadge
       allow(mock).to receive(:badge).with(name, title, cov)
       mock
     end
-    # rubocop:enable Metrics/ParameterLists, Metrics/AbcSize
+    # rubocop:enable Metrics/ParameterLists
 
     def map_config_options(config_hash, state)
       hash = {}

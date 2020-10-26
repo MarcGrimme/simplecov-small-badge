@@ -7,7 +7,7 @@ module SimpleCovSmallBadge
   # Basic Badge Formater Class that creates the badges.
   class Formatter
     def initialize(output = nil)
-      @output = output || STDOUT
+      @output = output || $stdout
       @config = SimpleCovSmallBadge.config
     end
 

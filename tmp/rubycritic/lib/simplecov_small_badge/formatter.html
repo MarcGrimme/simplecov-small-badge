@@ -47,7 +47,7 @@
     <div class="file-time">
       <span class="committed-at">
         
-          Updated <time class='js-timeago' datetime='2020-02-28 14:01:26 -0600'>2020-02-28 14:01:26 -0600</time>
+          Updated <time class='js-timeago' datetime='2020-10-26 13:14:39 +0100'>2020-10-26 13:14:39 +0100</time>
         
       </span>
     </div>
@@ -73,7 +73,7 @@
             </div>
             <div class="col-md-3">
               <div><span class="metric">6.5</span><small> complexity/method</small></div>
-              <div><span class="metric">4</span><small> churn</small></div>
+              <div><span class="metric">5</span><small> churn</small></div>
             </div>
             <div class="col-md-3">
               <div><span class="metric">52.33</span><small> complexity</small></div>
@@ -88,7 +88,7 @@
             <li><a href="#" id="toggle-code" class="toggle-button button">code</a></li>
             <li class="active">
               <a href="#" id="toggle-smells" class="toggle-button button">
-                9
+                8
                 smells
               </a>
             </li>
@@ -106,7 +106,7 @@ module SimpleCovSmallBadge
   # Basic Badge Formater Class that creates the badges.
   class Formatter<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Instance-Variable-Assumption.md" target="_blank"><b>InstanceVariableAssumption</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter assumes too much for instance variable '@image'</span>          </div>  </li></ol>
     def initialize(output = nil)
-      @output = output || STDOUT<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Control-Parameter.md" target="_blank"><b>ControlParameter</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#initialize is controlled by argument 'output'</span>          </div>  </li></ol>
+      @output = output || $stdout<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Control-Parameter.md" target="_blank"><b>ControlParameter</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#initialize is controlled by argument 'output'</span>          </div>  </li></ol>
       @config = SimpleCovSmallBadge.config
     end
 
@@ -132,7 +132,7 @@ module SimpleCovSmallBadge
     end
 
     def state(covered_percent)
-      if line_coverage_minimum&amp;.positive?<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Nil-Check.md" target="_blank"><b>NilCheck</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#state performs a nil-check</span>          </div>  </li></ol>
+      if line_coverage_minimum&amp;.positive?
         if covered_percent &gt;= line_coverage_minimum
           &#39;good&#39;
         else

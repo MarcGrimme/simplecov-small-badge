@@ -34,7 +34,7 @@ module SimpleCovSmallBadge
     # rubocop:enable Metrics/MethodLength
 
     # set up class variables and getters/setters
-    options.keys.each do |opt|
+    options.each_key do |opt|
       define_method(opt) { instance_variable_get "@#{opt}" }
       define_method("#{opt}=") { |val| instance_variable_set("@#{opt}", val) }
     end

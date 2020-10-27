@@ -47,7 +47,7 @@
     <div class="file-time">
       <span class="committed-at">
         
-          Updated <time class='js-timeago' datetime='2019-02-20 21:47:16 +0100'>2019-02-20 21:47:16 +0100</time>
+          Updated <time class='js-timeago' datetime='2020-10-26 13:14:39 +0100'>2020-10-26 13:14:39 +0100</time>
         
       </span>
     </div>
@@ -73,7 +73,7 @@
             </div>
             <div class="col-md-3">
               <div><span class="metric">5.6</span><small> complexity/method</small></div>
-              <div><span class="metric">8</span><small> churn</small></div>
+              <div><span class="metric">9</span><small> churn</small></div>
             </div>
             <div class="col-md-3">
               <div><span class="metric">16.79</span><small> complexity</small></div>
@@ -133,7 +133,7 @@ module SimpleCovSmallBadge
     # rubocop:enable Metrics/MethodLength
 
     # set up class variables and getters/setters
-    options.keys.each do |opt|
+    options.each_key do |opt|
       define_method(opt) { instance_variable_get &quot;@#{opt}&quot; }
       define_method(&quot;#{opt}=&quot;) { |val| instance_variable_set(&quot;@#{opt}&quot;, val) }
     end

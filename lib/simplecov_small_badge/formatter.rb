@@ -21,7 +21,7 @@ module SimpleCovSmallBadge
     end
 
     private
-
+    
     def badge(name, title, percent)
       percent_txt = percent_text(percent)
       @image.config_merge(map_image_config(state(percent)))
@@ -33,8 +33,8 @@ module SimpleCovSmallBadge
     end
 
     def state(covered_percent)
-      if line_coverage_minimum&.positive?
-        if covered_percent >= line_coverage_minimum
+      if SimpleCov.minimum_coverage[:line]&.positive?
+        if covered_percent >= SimpleCov.minimum_coverage[:line]
           'good'
         else
           'bad'

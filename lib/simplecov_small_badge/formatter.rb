@@ -51,11 +51,6 @@ module SimpleCovSmallBadge
       end
     end
 
-    def line_coverage_minimum
-      minimums = SimpleCov.minimum_coverage
-      minimums.is_a?(Hash) ? minimums[:line] : minimums
-    end
-
     def map_image_config(state)
       hash = {}
       @config.to_hash.map do |key, value|

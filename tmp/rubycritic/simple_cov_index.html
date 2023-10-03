@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- StyleSheets -->
-    <link href="assets/stylesheets/bootstrap.min.css" media="screen, projection, print" rel="stylesheet" type="text/css">
-    <link href="assets/stylesheets/font-awesome.min.css" media="screen, projection, print" rel="stylesheet" type="text/css">
-    <link href="assets/stylesheets/prettify.custom_theme.css" media="screen, projection, print" rel="stylesheet" type="text/css">
+    <link href="assets/vendor/stylesheets/bootstrap.min.css" media="screen, projection, print" rel="stylesheet" type="text/css">
+    <link href="assets/vendor/stylesheets/font-awesome.min.css" media="screen, projection, print" rel="stylesheet" type="text/css">
+    <link href="assets/vendor/stylesheets/prettify.custom_theme.css" media="screen, projection, print" rel="stylesheet" type="text/css">
     <link href="assets/stylesheets/application.css" media="screen, projection, print" rel="stylesheet" type="text/css">
   </head>
 
@@ -51,7 +51,7 @@
       </div>
       <!--End Page Title -->
       <div class="Content_Wrapper">
-        <table id="js-index-table" class="table coverage-index-table index-table sortable-table">
+        <table id="coverageTable" class="table index-table sortable-table tablesorter">
           <thead>
             <tr>
               
@@ -63,71 +63,83 @@
           </thead>
           
             <tr>
-              <tr>
-                
-                  <td>
-                    <div class="rating f">F</div>
-                  </td>
-                
+              
                 <td>
-                  <ul class="nav nav-pills">
-                    <li role="presentation" >
-                      <a href="lib/simplecov_small_badge/version.html">SimpleCovSmallBadge</a>
-                    </li>
-                  </ul>
+                  <div class="rating f">
+                    F
+                  </div>
                 </td>
-                <td>0%</td>
+              
+              <td>
+                <ul class="nav nav-pills">
+                  <li role="presentation" >
+                    <a href="lib/simplecov_small_badge/version.html">
+                      SimpleCovSmallBadge
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>0.00%</td>
             </tr>
           
             <tr>
-              <tr>
-                
-                  <td>
-                    <div class="rating a">A</div>
-                  </td>
-                
+              
                 <td>
-                  <ul class="nav nav-pills">
-                    <li role="presentation" >
-                      <a href="lib/simplecov_small_badge.html">SimpleCovSmallBadge</a>
-                    </li>
-                  </ul>
+                  <div class="rating a">
+                    A
+                  </div>
                 </td>
-                <td>100%</td>
+              
+              <td>
+                <ul class="nav nav-pills">
+                  <li role="presentation" >
+                    <a href="lib/simplecov_small_badge.html">
+                      SimpleCovSmallBadge
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>100.00%</td>
             </tr>
           
             <tr>
-              <tr>
-                
-                  <td>
-                    <div class="rating a">A</div>
-                  </td>
-                
+              
                 <td>
-                  <ul class="nav nav-pills">
-                    <li role="presentation" >
-                      <a href="lib/simplecov_small_badge/configuration.html">SimpleCovSmallBadge::Configuration</a>
-                    </li>
-                  </ul>
+                  <div class="rating a">
+                    A
+                  </div>
                 </td>
-                <td>100%</td>
+              
+              <td>
+                <ul class="nav nav-pills">
+                  <li role="presentation" >
+                    <a href="lib/simplecov_small_badge/configuration.html">
+                      SimpleCovSmallBadge::Configuration
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>100.00%</td>
             </tr>
           
             <tr>
-              <tr>
-                
-                  <td>
-                    <div class="rating a">A</div>
-                  </td>
-                
+              
                 <td>
-                  <ul class="nav nav-pills">
-                    <li role="presentation" >
-                      <a href="lib/simplecov_small_badge/formatter.html">SimpleCovSmallBadge::Formatter</a>
-                    </li>
-                  </ul>
+                  <div class="rating a">
+                    A
+                  </div>
                 </td>
-                <td>100%</td>
+              
+              <td>
+                <ul class="nav nav-pills">
+                  <li role="presentation" >
+                    <a href="lib/simplecov_small_badge/formatter.html">
+                      SimpleCovSmallBadge::Formatter
+                    </a>
+                  </li>
+                </ul>
+              </td>
+              <td>100.00%</td>
             </tr>
           
         </table>
@@ -142,14 +154,14 @@
     </div>
 
     <!-- JavaScripts -->
-    <script src='assets/javascripts/jquery.min.js'></script>
-    <script src='assets/javascripts/jquery.tablesorter.min.js'></script>
-    <script src='assets/javascripts/jquery.scrollTo.min.js'></script>
-    <script src='assets/javascripts/jquery.timeago.js'></script>
-    <script src='assets/javascripts/highcharts.src-4.0.1.js'></script>
-    <script src='assets/javascripts/prettify.js'></script>
-    <script src='assets/javascripts/bootstrap.min.js'></script>
-    <script src='assets/javascripts/application.js'></script>
-    <script src='assets/javascripts/jquery.filtertable.min.js'></script>
+    <script src="assets/vendor/javascripts/jquery.min.js"></script>
+    <script src="assets/vendor/javascripts/jquery.tablesorter.min.js"></script>
+    <script src="assets/vendor/javascripts/jquery.scrollTo.min.js"></script>
+    <script src="assets/vendor/javascripts/jquery.timeago.js"></script>
+    <script src="assets/vendor/javascripts/highcharts.src-4.0.1.js"></script>
+    <script src="assets/vendor/javascripts/prettify.js"></script>
+    <script src="assets/vendor/javascripts/bootstrap.min.js"></script>
+    <script src="assets/javascripts/application.js"></script>
+    <script src="assets/vendor/javascripts/jquery.filtertable.min.js"></script>
   </body>
 </html>

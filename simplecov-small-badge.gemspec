@@ -4,7 +4,7 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 require 'simplecov_small_badge/version'
 
 Gem::Specification.new do |s|
-  s.required_ruby_version = '>=2.5.0'
+  s.required_ruby_version = '>=3.2'
   s.name        = 'simplecov-small-badge'
   s.version     = SimpleCovSmallBadge::VERSION
   s.platform    = Gem::Platform::RUBY
@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = 'simplecov-small-badge'
 
-  s.add_dependency 'repo-small-badge', '~> 0.2.7'
-  s.add_dependency 'simplecov', '~> 0.17'
+  s.add_dependency 'repo-small-badge', '~> 0.2.9'
+  s.add_dependency 'simplecov', '~> 0.18'
   s.add_development_dependency 'rake', '~> 13'
   s.add_development_dependency 'rspec', '~> 3.8'
   s.add_development_dependency 'rubocop', '~> 1.0'

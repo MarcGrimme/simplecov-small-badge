@@ -47,7 +47,7 @@
     <div class="file-time">
       <span class="committed-at">
         
-          Updated <time class='js-timeago' datetime='2023-10-04 17:57:31 +0200'>2023-10-04 17:57:31 +0200</time>
+          Updated <time class='js-timeago' datetime='2023-10-08 10:23:31 +0200'>2023-10-08 10:23:31 +0200</time>
         
       </span>
     </div>
@@ -72,11 +72,11 @@
               <div><span class="metric">8</span><small> methods</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">6.7</span><small> complexity/method</small></div>
-              <div><span class="metric">6</span><small> churn</small></div>
+              <div><span class="metric">6.5</span><small> complexity/method</small></div>
+              <div><span class="metric">7</span><small> churn</small></div>
             </div>
             <div class="col-md-3">
-              <div><span class="metric">53.64</span><small> complexity</small></div>
+              <div><span class="metric">52.26</span><small> complexity</small></div>
               <div><span class="metric">0</span><small> duplications</small></div>
             </div>
           </div>
@@ -145,7 +145,7 @@ module SimpleCovSmallBadge
 
     def line_coverage_minimum<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Utility-Function.md" target="_blank"><b>UtilityFunction</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#line_coverage_minimum doesn't depend on instance state (maybe move it to another class?)</span>          </div>  </li></ol>
       minimums = SimpleCov.minimum_coverage
-      minimums.is_a?(Hash) ? minimums[SimpleCov.primary_coverage] : minimums
+      minimums[SimpleCov.primary_coverage]
     end
 
     def map_image_config(state)<ol class="nocode errors smells">  <li>    <div class="description">      <div class="heading">        <span>          <i class="fa fa-warning" aria-hidden="true"></i>          <a href="https://github.com/troessner/reek/blob/master/docs/Too-Many-Statements.md" target="_blank"><b>TooManyStatements</b></a>        </span>      </div>      <span>SimpleCovSmallBadge::Formatter#map_image_config has approx 6 statements</span>          </div>  </li></ol>

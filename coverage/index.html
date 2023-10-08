@@ -9,12 +9,12 @@
     <link rel="icon" type="image/png" href="./assets/0.12.3/favicon.png" />
   </head>
 
-  <body>
+  <body data-branch-coverage=true>
     <div id="loading">
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-04T15:59:34+00:00">2023-10-04T15:59:34+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-08T17:24:07+00:00">2023-10-08T17:24:07+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         37.9
+         32.17
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>169</b> relevant lines,
-    <span class="green"><b>169</b> lines covered</span> and
+    <b>205</b> relevant lines,
+    <span class="green"><b>205</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -52,6 +52,16 @@
 )
   </div>
 
+  
+    <div class="t-branch-summary">
+      <span><b>0</b> total branches, </span>
+      <span class="green"><b>0</b> branches covered</span> and
+      <span class="red"><b>0</b> branches missed.</span>
+      (<span class="green">
+  100.0%
+</span>
+)
+    </div>
   
 
   <div class="file_list--responsive">
@@ -66,6 +76,11 @@
           <th class="cell--number">Lines missed</th>
           <th class="cell--number">Avg. Hits / Line</th>
           
+            <th class="cell--number">Branch Coverage</th>
+            <th class="cell--number">Branches</th>
+            <th class="cell--number">Covered branches</th>
+            <th class="cell--number">Missed branches </th>
+          
         </tr>
       </thead>
       <tbody>
@@ -77,7 +92,12 @@
             <td class="cell--number">10</td>
             <td class="cell--number">10</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.30</td>
+            <td class="cell--number">2.40</td>
+            
+              <td class="green strong cell--number t-file__branch-coverage">100.00 %</td>
+              <td class="cell--number">0</td>
+              <td class="cell--number">0</td>
+              <td class="cell--number">0</td>
             
           </tr>
         
@@ -88,7 +108,12 @@
             <td class="cell--number">15</td>
             <td class="cell--number">15</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">131.20</td>
+            <td class="cell--number">132.80</td>
+            
+              <td class="green strong cell--number t-file__branch-coverage">100.00 %</td>
+              <td class="cell--number">0</td>
+              <td class="cell--number">0</td>
+              <td class="cell--number">0</td>
             
           </tr>
         
@@ -99,18 +124,28 @@
             <td class="cell--number">40</td>
             <td class="cell--number">40</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">66.98</td>
+            <td class="cell--number">68.75</td>
+            
+              <td class="green strong cell--number t-file__branch-coverage">100.00 %</td>
+              <td class="cell--number">0</td>
+              <td class="cell--number">0</td>
+              <td class="cell--number">0</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#17ea15b44148ca39a9ef538424b0a59cbf9efbe1" class="src_link" title="spec/simplecov_small_badge_formatter_spec.rb">spec/simplecov_small_badge_formatter_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">133</td>
-            <td class="cell--number">79</td>
-            <td class="cell--number">79</td>
+            <td class="cell--number">200</td>
+            <td class="cell--number">115</td>
+            <td class="cell--number">115</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.50</td>
+            
+              <td class="green strong cell--number t-file__branch-coverage">100.00 %</td>
+              <td class="cell--number">0</td>
+              <td class="cell--number">0</td>
+              <td class="cell--number">0</td>
             
           </tr>
         
@@ -122,6 +157,11 @@
             <td class="cell--number">25</td>
             <td class="cell--number">0</td>
             <td class="cell--number">66.24</td>
+            
+              <td class="green strong cell--number t-file__branch-coverage">100.00 %</td>
+              <td class="cell--number">0</td>
+              <td class="cell--number">0</td>
+              <td class="cell--number">0</td>
             
           </tr>
         
@@ -154,6 +194,14 @@
     </h4>
 
     
+      <h4>
+        <span class="green">
+  100.0%
+</span>
+
+        branches covered
+      </h4>
+    
 
     <div class="t-line-summary">
       <b>10</b> relevant lines.
@@ -161,6 +209,12 @@
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
+    
+      <div class="t-branch-summary">
+          <span><b>0</b> total branches, </span>
+          <span class="green"><b>0</b> branches covered</span> and
+          <span class="red"><b>0</b> branches missed.</span>
+      </div>
     
 
   </div>
@@ -174,6 +228,8 @@
             
 
             
+              
+            
 
             <code class="ruby"># frozen_string_literal: true</code>
           </li>
@@ -184,6 +240,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -196,6 +254,8 @@
             
 
             
+              
+            
 
             <code class="ruby"># Ensure we are using a compatible version of SimpleCov</code>
           </li>
@@ -206,6 +266,8 @@
             
             <span class="hits">skipped</span>
 
+            
+              
             
 
             <code class="ruby"># :nocov:</code>
@@ -218,6 +280,8 @@
             <span class="hits">skipped</span>
 
             
+              
+            
 
             <code class="ruby">if defined?(SimpleCov::VERSION) &amp;&amp;</code>
           </li>
@@ -228,6 +292,8 @@
             
             <span class="hits">skipped</span>
 
+            
+              
             
 
             <code class="ruby">   Gem::Version.new(SimpleCov::VERSION) &lt; Gem::Version.new(&#39;0.7.1&#39;)</code>
@@ -240,6 +306,8 @@
             <span class="hits">skipped</span>
 
             
+              
+            
 
             <code class="ruby">  raise &#39;The version of SimpleCov you are using is too old. &#39;\</code>
           </li>
@@ -250,6 +318,8 @@
             
             <span class="hits">skipped</span>
 
+            
+              
             
 
             <code class="ruby">    &#39;Please update with `gem install simplecov` or `bundle update simplecov`&#39;</code>
@@ -262,6 +332,8 @@
             <span class="hits">skipped</span>
 
             
+              
+            
 
             <code class="ruby">end</code>
           </li>
@@ -272,6 +344,8 @@
             
             <span class="hits">skipped</span>
 
+            
+              
             
 
             <code class="ruby"># :nocov:</code>
@@ -284,6 +358,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -294,6 +370,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">require &#39;simplecov_small_badge/configuration&#39;</code>
@@ -306,6 +384,8 @@
             
 
             
+              
+            
 
             <code class="ruby"># :nodoc:</code>
           </li>
@@ -316,6 +396,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">module SimpleCovSmallBadge</code>
@@ -328,6 +410,8 @@
             
 
             
+              
+            
 
             <code class="ruby">  @configuration = Configuration.new</code>
           </li>
@@ -338,6 +422,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">  def self.configure</code>
@@ -350,6 +436,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    yield config</code>
           </li>
@@ -360,6 +448,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">  end</code>
@@ -372,6 +462,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -383,16 +475,20 @@
             
 
             
+              
+            
 
             <code class="ruby">  def self.config</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="13" data-linenumber="21">
-            <span class="hits">13</span>
+          <li class="covered" data-hits="14" data-linenumber="21">
+            <span class="hits">14</span>
             
 
+            
+              
             
 
             <code class="ruby">    @configuration</code>
@@ -405,6 +501,8 @@
             
 
             
+              
+            
 
             <code class="ruby">  end</code>
           </li>
@@ -415,6 +513,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">end</code>
@@ -427,6 +527,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -437,6 +539,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">$LOAD_PATH.unshift(File.join(File.dirname(__FILE__)))</code>
@@ -449,6 +553,8 @@
             
 
             
+              
+            
 
             <code class="ruby">require &#39;simplecov_small_badge/version&#39;</code>
           </li>
@@ -459,6 +565,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">require &#39;simplecov_small_badge/formatter&#39;</code>
@@ -482,6 +590,14 @@
     </h4>
 
     
+      <h4>
+        <span class="green">
+  100.0%
+</span>
+
+        branches covered
+      </h4>
+    
 
     <div class="t-line-summary">
       <b>15</b> relevant lines.
@@ -489,6 +605,12 @@
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
+    
+      <div class="t-branch-summary">
+          <span><b>0</b> total branches, </span>
+          <span class="green"><b>0</b> branches covered</span> and
+          <span class="red"><b>0</b> branches missed.</span>
+      </div>
     
 
   </div>
@@ -502,6 +624,8 @@
             
 
             
+              
+            
 
             <code class="ruby"># frozen_string_literal: true</code>
           </li>
@@ -512,6 +636,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -524,6 +650,8 @@
             
 
             
+              
+            
 
             <code class="ruby">module SimpleCovSmallBadge</code>
           </li>
@@ -534,6 +662,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">  # Class to keep all the valid documentations that are required to build the</code>
@@ -546,6 +676,8 @@
             
 
             
+              
+            
 
             <code class="ruby">  # badge</code>
           </li>
@@ -556,6 +688,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">  class Configuration</code>
@@ -568,6 +702,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    # Set up config variables.</code>
           </li>
@@ -578,6 +714,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    # rubocop:disable Metrics/MethodLength</code>
@@ -590,6 +728,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    def self.options</code>
           </li>
@@ -600,6 +740,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">      {</code>
@@ -612,6 +754,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        with_groups: false,</code>
           </li>
@@ -622,6 +766,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">        background: &#39;#fff&#39;,</code>
@@ -634,6 +780,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        title_prefix: &#39;scov&#39;,</code>
           </li>
@@ -644,6 +792,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">        title_background: &#39;#555&#39;,</code>
@@ -656,6 +806,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        title_font: &#39;Verdana,sans-serif&#39;,</code>
           </li>
@@ -666,6 +818,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">        font_size: 11,</code>
@@ -678,6 +832,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        title_color: &#39;#fff&#39;,</code>
           </li>
@@ -688,6 +844,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">        coverage_background_bad: &#39;#ff0000&#39;,</code>
@@ -700,6 +858,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        coverage_background_unknown: &#39;#cccc00&#39;,</code>
           </li>
@@ -710,6 +870,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">        coverage_background_good: &#39;#4dc71f&#39;,</code>
@@ -722,6 +884,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        coverage_font: &#39;Verdana,sans-serif&#39;,</code>
           </li>
@@ -732,6 +896,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">        coverage_font_color: &#39;#fff&#39;,</code>
@@ -744,6 +910,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        coverage_font_size: 11,</code>
           </li>
@@ -754,6 +922,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">        badge_height: 20,</code>
@@ -766,6 +936,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        badge_width: 120,</code>
           </li>
@@ -776,6 +948,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">        filename_prefix: &#39;coverage_badge&#39;,</code>
@@ -788,6 +962,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        output_path: SimpleCov.coverage_path,</code>
           </li>
@@ -798,6 +974,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">        log_level: &#39;info&#39;,</code>
@@ -810,6 +988,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        rounded_border: true,</code>
           </li>
@@ -820,6 +1000,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">        rounded_edge_radius: 3,</code>
@@ -832,6 +1014,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        percent_sign: &#39;%&#39;</code>
           </li>
@@ -842,6 +1026,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">      }</code>
@@ -854,6 +1040,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    end</code>
           </li>
@@ -864,6 +1052,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    # rubocop:enable Metrics/MethodLength</code>
@@ -876,6 +1066,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -886,6 +1078,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    # set up class variables and getters/setters</code>
@@ -898,6 +1092,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    options.each_key do |opt|</code>
           </li>
@@ -908,6 +1104,8 @@
             <span class="hits">64</span>
             
 
+            
+              
             
 
             <code class="ruby">      define_method(opt) { instance_variable_get &quot;@#{opt}&quot; }</code>
@@ -920,6 +1118,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      define_method(&quot;#{opt}=&quot;) { |val| instance_variable_set(&quot;@#{opt}&quot;, val) }</code>
           </li>
@@ -930,6 +1130,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    end</code>
@@ -942,6 +1144,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -952,6 +1156,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">    def initialize(**opts)</code>
@@ -964,6 +1170,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      SimpleCovSmallBadge::Configuration</code>
           </li>
@@ -974,6 +1182,8 @@
             <span class="hits">483</span>
             
 
+            
+              
             
 
             <code class="ruby">        .options.merge(opts).each { |opt, v| send(:&quot;#{opt}=&quot;, v) }</code>
@@ -986,6 +1196,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    end</code>
           </li>
@@ -996,6 +1208,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -1008,16 +1222,20 @@
             
 
             
+              
+            
 
             <code class="ruby">    def to_hash</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="35" data-linenumber="48">
-            <span class="hits">35</span>
+          <li class="covered" data-hits="36" data-linenumber="48">
+            <span class="hits">36</span>
             
 
+            
+              
             
 
             <code class="ruby">      hash = {}</code>
@@ -1025,10 +1243,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="35" data-linenumber="49">
-            <span class="hits">35</span>
+          <li class="covered" data-hits="36" data-linenumber="49">
+            <span class="hits">36</span>
             
 
+            
+              
             
 
             <code class="ruby">      instance_variables.each do |var|</code>
@@ -1036,10 +1256,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="735" data-linenumber="50">
-            <span class="hits">735</span>
+          <li class="covered" data-hits="756" data-linenumber="50">
+            <span class="hits">756</span>
             
 
+            
+              
             
 
             <code class="ruby">        hash[var.to_s.delete(&#39;@&#39;).to_sym] = instance_variable_get(var)</code>
@@ -1052,16 +1274,20 @@
             
 
             
+              
+            
 
             <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="35" data-linenumber="52">
-            <span class="hits">35</span>
+          <li class="covered" data-hits="36" data-linenumber="52">
+            <span class="hits">36</span>
             
 
+            
+              
             
 
             <code class="ruby">      hash</code>
@@ -1074,6 +1300,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    end</code>
           </li>
@@ -1085,6 +1313,8 @@
             
 
             
+              
+            
 
             <code class="ruby">  end</code>
           </li>
@@ -1095,6 +1325,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">end</code>
@@ -1118,6 +1350,14 @@
     </h4>
 
     
+      <h4>
+        <span class="green">
+  100.0%
+</span>
+
+        branches covered
+      </h4>
+    
 
     <div class="t-line-summary">
       <b>40</b> relevant lines.
@@ -1125,6 +1365,12 @@
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
+    
+      <div class="t-branch-summary">
+          <span><b>0</b> total branches, </span>
+          <span class="green"><b>0</b> branches covered</span> and
+          <span class="red"><b>0</b> branches missed.</span>
+      </div>
     
 
   </div>
@@ -1138,6 +1384,8 @@
             
 
             
+              
+            
 
             <code class="ruby"># frozen_string_literal: true</code>
           </li>
@@ -1148,6 +1396,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -1160,6 +1410,8 @@
             
 
             
+              
+            
 
             <code class="ruby">require &#39;repo_small_badge/image&#39;</code>
           </li>
@@ -1170,6 +1422,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">require &#39;simplecov_small_badge/configuration&#39;</code>
@@ -1182,6 +1436,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -1192,6 +1448,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">module SimpleCovSmallBadge</code>
@@ -1204,6 +1462,8 @@
             
 
             
+              
+            
 
             <code class="ruby">  # Basic Badge Formater Class that creates the badges.</code>
           </li>
@@ -1214,6 +1474,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">  class Formatter</code>
@@ -1226,16 +1488,20 @@
             
 
             
+              
+            
 
             <code class="ruby">    def initialize(output = nil)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="10">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="10">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      @output = output || $stdout</code>
@@ -1243,10 +1509,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="11">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="11">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      @config = SimpleCovSmallBadge.config</code>
@@ -1259,6 +1527,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    end</code>
           </li>
@@ -1269,6 +1539,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -1281,16 +1553,20 @@
             
 
             
+              
+            
 
             <code class="ruby">    def format(result)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="15">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="15">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      percent = result.source_files.covered_percent.round(0)</code>
@@ -1298,10 +1574,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="16">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="16">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      @image = RepoSmallBadge::Image.new(map_image_config(state(percent)))</code>
@@ -1309,10 +1587,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="17">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="17">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      badge(&#39;total&#39;, &#39;total&#39;, percent)</code>
@@ -1320,10 +1600,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="18">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="18">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      group_percent_from_result(result) do |name, title, cov_percent|</code>
@@ -1331,10 +1613,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="19">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="9" data-linenumber="19">
+            <span class="hits">9</span>
             
 
+            
+              
             
 
             <code class="ruby">        badge(name, title, cov_percent.round(0))</code>
@@ -1347,6 +1631,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      end</code>
           </li>
@@ -1357,6 +1643,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    end</code>
@@ -1369,6 +1657,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -1379,6 +1669,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">    private</code>
@@ -1391,6 +1683,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -1401,6 +1695,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">    def badge(name, title, percent)</code>
@@ -1413,6 +1709,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      percent_txt = percent_text(percent)</code>
           </li>
@@ -1423,6 +1721,8 @@
             <span class="hits">22</span>
             
 
+            
+              
             
 
             <code class="ruby">      @image.config_merge(map_image_config(state(percent)))</code>
@@ -1435,6 +1735,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      @image.badge(name, title, percent_txt)</code>
           </li>
@@ -1445,6 +1747,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    end</code>
@@ -1457,6 +1761,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -1467,6 +1773,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">    def percent_text(percent)</code>
@@ -1479,6 +1787,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      &quot;#{percent}#{@config.percent_sign}&quot;</code>
           </li>
@@ -1489,6 +1799,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    end</code>
@@ -1501,6 +1813,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -1512,16 +1826,20 @@
             
 
             
+              
+            
 
             <code class="ruby">    def state(covered_percent)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="34" data-linenumber="36">
-            <span class="hits">34</span>
+          <li class="covered" data-hits="35" data-linenumber="36">
+            <span class="hits">35</span>
             
 
+            
+              
             
 
             <code class="ruby">      if line_coverage_minimum&amp;.positive?</code>
@@ -1529,10 +1847,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="28" data-linenumber="37">
-            <span class="hits">28</span>
+          <li class="covered" data-hits="27" data-linenumber="37">
+            <span class="hits">27</span>
             
 
+            
+              
             
 
             <code class="ruby">        if covered_percent &gt;= line_coverage_minimum</code>
@@ -1540,10 +1860,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="14" data-linenumber="38">
-            <span class="hits">14</span>
+          <li class="covered" data-hits="13" data-linenumber="38">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">          &#39;good&#39;</code>
@@ -1556,6 +1878,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        else</code>
           </li>
@@ -1566,6 +1890,8 @@
             <span class="hits">14</span>
             
 
+            
+              
             
 
             <code class="ruby">          &#39;bad&#39;</code>
@@ -1578,6 +1904,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        end</code>
           </li>
@@ -1589,16 +1917,20 @@
             
 
             
+              
+            
 
             <code class="ruby">      else</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="43">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="8" data-linenumber="43">
+            <span class="hits">8</span>
             
 
+            
+              
             
 
             <code class="ruby">        &#39;unknown&#39;</code>
@@ -1611,6 +1943,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      end</code>
           </li>
@@ -1621,6 +1955,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    end</code>
@@ -1633,6 +1969,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -1643,6 +1981,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">    def line_coverage_minimum</code>
@@ -1655,6 +1995,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      minimums = SimpleCov.minimum_coverage</code>
           </li>
@@ -1666,8 +2008,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">      minimums.is_a?(Hash) ? minimums[SimpleCov.primary_coverage] : minimums</code>
+            <code class="ruby">      minimums[SimpleCov.primary_coverage]</code>
           </li>
         </div>
       
@@ -1676,6 +2020,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    end</code>
@@ -1688,6 +2034,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -1699,16 +2047,20 @@
             
 
             
+              
+            
 
             <code class="ruby">    def map_image_config(state)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="34" data-linenumber="53">
-            <span class="hits">34</span>
+          <li class="covered" data-hits="35" data-linenumber="53">
+            <span class="hits">35</span>
             
 
+            
+              
             
 
             <code class="ruby">      hash = {}</code>
@@ -1716,10 +2068,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="34" data-linenumber="54">
-            <span class="hits">34</span>
+          <li class="covered" data-hits="35" data-linenumber="54">
+            <span class="hits">35</span>
             
 
+            
+              
             
 
             <code class="ruby">      @config.to_hash.map do |key, value|</code>
@@ -1727,10 +2081,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="714" data-linenumber="55">
-            <span class="hits">714</span>
+          <li class="covered" data-hits="735" data-linenumber="55">
+            <span class="hits">735</span>
             
 
+            
+              
             
 
             <code class="ruby">        key = key</code>
@@ -1743,6 +2099,8 @@
             
 
             
+              
+            
 
             <code class="ruby">              .to_s.sub(/^coverage_background_#{state}/, &#39;value_background&#39;)</code>
           </li>
@@ -1754,16 +2112,20 @@
             
 
             
+              
+            
 
             <code class="ruby">              .to_sym</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="714" data-linenumber="58">
-            <span class="hits">714</span>
+          <li class="covered" data-hits="735" data-linenumber="58">
+            <span class="hits">735</span>
             
 
+            
+              
             
 
             <code class="ruby">        key = key.to_s.sub(/^coverage_/, &#39;value_&#39;).to_sym</code>
@@ -1771,10 +2133,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="714" data-linenumber="59">
-            <span class="hits">714</span>
+          <li class="covered" data-hits="735" data-linenumber="59">
+            <span class="hits">735</span>
             
 
+            
+              
             
 
             <code class="ruby">        hash[key] = value</code>
@@ -1787,16 +2151,20 @@
             
 
             
+              
+            
 
             <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="34" data-linenumber="61">
-            <span class="hits">34</span>
+          <li class="covered" data-hits="35" data-linenumber="61">
+            <span class="hits">35</span>
             
 
+            
+              
             
 
             <code class="ruby">      hash</code>
@@ -1809,6 +2177,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    end</code>
           </li>
@@ -1819,6 +2189,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -1831,6 +2203,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    # converts the result to a hash consisting of the groupname</code>
           </li>
@@ -1841,6 +2215,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    # array of percentage (integer in percent), strength float</code>
@@ -1853,6 +2229,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    # and the state [ &#39;good&#39;, &#39;bad&#39;, &#39;unknown&#39; ]</code>
           </li>
@@ -1863,6 +2241,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    # consolidated for each group.</code>
@@ -1875,16 +2255,20 @@
             
 
             
+              
+            
 
             <code class="ruby">    def group_percent_from_result(result)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="69">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="69">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      result.groups.each do |name, files|</code>
@@ -1892,10 +2276,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="70">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="9" data-linenumber="70">
+            <span class="hits">9</span>
             
 
+            
+              
             
 
             <code class="ruby">        covered = files.covered_percent.round(0)</code>
@@ -1903,10 +2289,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="71">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="9" data-linenumber="71">
+            <span class="hits">9</span>
             
 
+            
+              
             
 
             <code class="ruby">        yield name, name, covered, covered</code>
@@ -1919,6 +2307,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      end</code>
           </li>
@@ -1929,6 +2319,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    end</code>
@@ -1941,6 +2333,8 @@
             
 
             
+              
+            
 
             <code class="ruby">  end</code>
           </li>
@@ -1951,6 +2345,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">end</code>
@@ -1974,13 +2370,27 @@
     </h4>
 
     
+      <h4>
+        <span class="green">
+  100.0%
+</span>
+
+        branches covered
+      </h4>
+    
 
     <div class="t-line-summary">
-      <b>79</b> relevant lines.
-      <span class="green"><b>79</b> lines covered</span> and
+      <b>115</b> relevant lines.
+      <span class="green"><b>115</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
+    
+      <div class="t-branch-summary">
+          <span><b>0</b> total branches, </span>
+          <span class="green"><b>0</b> branches covered</span> and
+          <span class="red"><b>0</b> branches missed.</span>
+      </div>
     
 
   </div>
@@ -1994,6 +2404,8 @@
             
 
             
+              
+            
 
             <code class="ruby"># frozen_string_literal: true</code>
           </li>
@@ -2004,6 +2416,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -2016,6 +2430,8 @@
             
 
             
+              
+            
 
             <code class="ruby">require &#39;spec_helper&#39;</code>
           </li>
@@ -2026,6 +2442,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -2038,6 +2456,8 @@
             
 
             
+              
+            
 
             <code class="ruby">describe SimpleCovSmallBadge::Formatter do</code>
           </li>
@@ -2048,6 +2468,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">  include TestSimpleCovSmallBadge::Mocks</code>
@@ -2060,6 +2482,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -2070,6 +2494,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">  describe &#39;#format&#39; do</code>
@@ -2082,6 +2508,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    context &#39;bad result&#39; do</code>
           </li>
@@ -2092,6 +2520,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">      it do</code>
@@ -2104,8 +2534,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(90)</code>
+            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(line: 90)</code>
           </li>
         </div>
       
@@ -2114,6 +2546,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">        mock_repo_badge_image(cov: &#39;50%&#39;, state: &#39;bad&#39;)</code>
@@ -2126,6 +2560,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        result = mock_result(50)</code>
           </li>
@@ -2136,6 +2572,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
@@ -2148,6 +2586,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      end</code>
           </li>
@@ -2159,19 +2599,23 @@
             
 
             
+              
+            
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="17">
+            
             
 
             
+              
+            
 
-            <code class="ruby">      it do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -2181,8 +2625,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(line: 90)</code>
+            <code class="ruby">    context &#39;good result&#39; do</code>
           </li>
         </div>
       
@@ -2192,8 +2638,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        mock_repo_badge_image(cov: &#39;50%&#39;, state: &#39;bad&#39;)</code>
+            <code class="ruby">      it do</code>
           </li>
         </div>
       
@@ -2203,8 +2651,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        result = mock_result(50)</code>
+            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(line: 100)</code>
           </li>
         </div>
       
@@ -2214,8 +2664,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
+            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
           </li>
         </div>
       
@@ -2225,19 +2677,23 @@
             
 
             
+              
+            
 
-            <code class="ruby">      end</code>
+            <code class="ruby">                                           cov: &#39;100%&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="23">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    end</code>
+            
+              
+            
+
+            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
           </li>
         </div>
       
@@ -2247,8 +2703,10 @@
             
 
             
+              
+            
 
-            <code class="ruby"></code>
+            <code class="ruby">                              cov: &#39;100%&#39;, mock: image_mock)</code>
           </li>
         </div>
       
@@ -2258,8 +2716,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">    context &#39;good result&#39; do</code>
+            <code class="ruby">        result = mock_result(100, &#39;library&#39; =&gt; mock_result_group(100))</code>
           </li>
         </div>
       
@@ -2269,41 +2729,49 @@
             
 
             
+              
+            
+
+            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
 
             <code class="ruby">      it do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="27">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(100)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="28">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="29">
-            
-            
-
-            
-
-            <code class="ruby">                                           cov: &#39;100%&#39;)</code>
           </li>
         </div>
       
@@ -2313,30 +2781,36 @@
             
 
             
+              
+            
 
-            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(line: 90)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
-            
-
-            <code class="ruby">                              cov: &#39;100%&#39;, mock: image_mock)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="32">
+          <li class="covered" data-hits="1" data-linenumber="31">
             <span class="hits">1</span>
             
 
             
+              
+            
 
-            <code class="ruby">        result = mock_result(100, &#39;library&#39; =&gt; mock_result_group(100))</code>
+            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                           cov: &#39;90%&#39;)</code>
           </li>
         </div>
       
@@ -2346,8 +2820,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
+            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
           </li>
         </div>
       
@@ -2357,19 +2833,23 @@
             
 
             
+              
+            
 
-            <code class="ruby">      end</code>
+            <code class="ruby">                              cov: &#39;90%&#39;, mock: image_mock)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+              
+            
+
+            <code class="ruby">        result = mock_result(90, &#39;library&#39; =&gt; mock_result_group(90))</code>
           </li>
         </div>
       
@@ -2379,30 +2859,36 @@
             
 
             
+              
+            
 
-            <code class="ruby">      it do</code>
+            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="37">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="37">
+            
             
 
             
+              
+            
 
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(90)</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="38">
+            
             
 
             
+              
+            
 
-            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -2412,8 +2898,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">                                           cov: &#39;90%&#39;)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -2423,19 +2911,23 @@
             
 
             
+              
+            
 
-            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+            <code class="ruby">    context &#39;bad result&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="41">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">                              cov: &#39;90%&#39;, mock: image_mock)</code>
+            
+              
+            
+
+            <code class="ruby">      it do</code>
           </li>
         </div>
       
@@ -2445,8 +2937,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        result = mock_result(90, &#39;library&#39; =&gt; mock_result_group(90))</code>
+            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(line: 91)</code>
           </li>
         </div>
       
@@ -2456,8 +2950,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
+            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
           </li>
         </div>
       
@@ -2467,30 +2963,36 @@
             
 
             
+              
+            
 
-            <code class="ruby">      end</code>
+            <code class="ruby">                                           cov: &#39;90%&#39;, state: &#39;bad&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="45">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="46">
+          <li class="covered" data-hits="1" data-linenumber="45">
             <span class="hits">1</span>
             
 
             
+              
+            
 
-            <code class="ruby">      it do</code>
+            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                              cov: &#39;90%&#39;, state: &#39;bad&#39;, mock: image_mock)</code>
           </li>
         </div>
       
@@ -2500,8 +3002,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(line: 100)</code>
+            <code class="ruby">        result = mock_result(90, &#39;library&#39; =&gt; mock_result_group(90))</code>
           </li>
         </div>
       
@@ -2511,8 +3015,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
+            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
           </li>
         </div>
       
@@ -2522,19 +3028,23 @@
             
 
             
+              
+            
 
-            <code class="ruby">                                           cov: &#39;100%&#39;)</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="50">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="50">
+            
             
 
             
+              
+            
 
-            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -2544,8 +3054,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">                              cov: &#39;100%&#39;, mock: image_mock)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -2555,8 +3067,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        result = mock_result(100, &#39;library&#39; =&gt; mock_result_group(100))</code>
+            <code class="ruby">    context &#39;unknown result&#39; do</code>
           </li>
         </div>
       
@@ -2566,41 +3080,49 @@
             
 
             
+              
+            
 
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
+            <code class="ruby">      it do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="54">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="55">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="56">
+          <li class="covered" data-hits="1" data-linenumber="54">
             <span class="hits">1</span>
             
 
             
+              
+            
 
-            <code class="ruby">      it do</code>
+            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return({})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="55">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                           cov: &#39;90%&#39;, state: &#39;unknown&#39;)</code>
           </li>
         </div>
       
@@ -2610,30 +3132,36 @@
             
 
             
+              
+            
 
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(line: 90)</code>
+            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="58">
+          <li class="never" data-hits="" data-linenumber="58">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                              cov: &#39;90%&#39;, state: &#39;unknown&#39;, mock: image_mock)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="59">
             <span class="hits">1</span>
             
 
             
-
-            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="59">
-            
+              
             
 
-            
-
-            <code class="ruby">                                           cov: &#39;90%&#39;)</code>
+            <code class="ruby">        result = mock_result(90, &#39;library&#39; =&gt; mock_result_group(90))</code>
           </li>
         </div>
       
@@ -2643,8 +3171,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
           </li>
         </div>
       
@@ -2654,38 +3184,7 @@
             
 
             
-
-            <code class="ruby">                              cov: &#39;90%&#39;, mock: image_mock)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="62">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        result = mock_result(90, &#39;library&#39; =&gt; mock_result_group(90))</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="63">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="64">
-            
-            
-
+              
             
 
             <code class="ruby">      end</code>
@@ -2693,10 +3192,12 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="65">
+          <li class="never" data-hits="" data-linenumber="62">
             
             
 
+            
+              
             
 
             <code class="ruby">    end</code>
@@ -2704,13 +3205,54 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
+          <li class="never" data-hits="" data-linenumber="63">
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">    context &#39;mixed result&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">      it do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(line: 90)</code>
           </li>
         </div>
       
@@ -2720,19 +3262,23 @@
             
 
             
+              
+            
 
-            <code class="ruby">    context &#39;bad result&#39; do</code>
+            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="68">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="68">
+            
             
 
             
+              
+            
 
-            <code class="ruby">      it do</code>
+            <code class="ruby">                                           cov: &#39;89%&#39;, state: &#39;bad&#39;)</code>
           </li>
         </div>
       
@@ -2742,30 +3288,36 @@
             
 
             
+              
+            
 
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(91)</code>
+            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="70">
+          <li class="never" data-hits="" data-linenumber="70">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                              cov: &#39;90%&#39;, state: &#39;good&#39;, mock: image_mock)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="71">
             <span class="hits">1</span>
             
 
             
-
-            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="71">
-            
+              
             
 
-            
-
-            <code class="ruby">                                           cov: &#39;90%&#39;, state: &#39;bad&#39;)</code>
+            <code class="ruby">        result = mock_result(89, &#39;library&#39; =&gt; mock_result_group(90))</code>
           </li>
         </div>
       
@@ -2775,8 +3327,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
           </li>
         </div>
       
@@ -2786,38 +3340,7 @@
             
 
             
-
-            <code class="ruby">                              cov: &#39;90%&#39;, state: &#39;bad&#39;, mock: image_mock)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="74">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        result = mock_result(90, &#39;library&#39; =&gt; mock_result_group(90))</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="75">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="76">
-            
-            
-
+              
             
 
             <code class="ruby">      end</code>
@@ -2825,10 +3348,25 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="77">
+          <li class="never" data-hits="" data-linenumber="74">
             
             
 
+            
+              
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="75">
+            
+            
+
+            
+              
             
 
             <code class="ruby"></code>
@@ -2836,35 +3374,67 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="78">
+          <li class="covered" data-hits="1" data-linenumber="76">
             <span class="hits">1</span>
             
 
             
+              
+            
 
-            <code class="ruby">      it do</code>
+            <code class="ruby">    context &#39;with branch coverage&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="79">
+          <li class="covered" data-hits="1" data-linenumber="77">
             <span class="hits">1</span>
             
 
             
+              
+            
 
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(line: 91)</code>
+            <code class="ruby">      before do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="80">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="7" data-linenumber="78">
+            <span class="hits">7</span>
             
 
             
+              
+            
 
-            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
+            <code class="ruby">        SimpleCov.enable_coverage :branch</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="79">
+            <span class="hits">7</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        SimpleCov.primary_coverage :branch</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="80">
+            <span class="hits">7</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage)</code>
           </li>
         </div>
       
@@ -2874,19 +3444,23 @@
             
 
             
+              
+            
 
-            <code class="ruby">                                           cov: &#39;90%&#39;, state: &#39;bad&#39;)</code>
+            <code class="ruby">          .and_return(minimum_coverage)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="82">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="82">
+            
             
 
             
+              
+            
 
-            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -2896,8 +3470,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">                              cov: &#39;90%&#39;, state: &#39;bad&#39;, mock: image_mock)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -2907,41 +3483,49 @@
             
 
             
+              
+            
 
-            <code class="ruby">        result = mock_result(90, &#39;library&#39; =&gt; mock_result_group(90))</code>
+            <code class="ruby">      after do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="85">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="7" data-linenumber="85">
+            <span class="hits">7</span>
             
 
             
+              
+            
 
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
+            <code class="ruby">        SimpleCov.clear_coverage_criteria</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="86">
-            
-            
-
+          <li class="covered" data-hits="7" data-linenumber="86">
+            <span class="hits">7</span>
             
 
-            <code class="ruby">      end</code>
+            
+              
+            
+
+            <code class="ruby">        SimpleCov.enable_coverage :line</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="87">
-            
-            
-
+          <li class="covered" data-hits="7" data-linenumber="87">
+            <span class="hits">7</span>
             
 
-            <code class="ruby">    end</code>
+            
+              
+            
+
+            <code class="ruby">        SimpleCov.primary_coverage :line</code>
           </li>
         </div>
       
@@ -2951,19 +3535,23 @@
             
 
             
+              
+            
 
-            <code class="ruby"></code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="89">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="89">
+            
             
 
             
+              
+            
 
-            <code class="ruby">    context &#39;unknown result&#39; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -2973,63 +3561,75 @@
             
 
             
+              
+            
 
-            <code class="ruby">      it do</code>
+            <code class="ruby">      context &#39;when coverage is lower than required&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="91">
+          <li class="covered" data-hits="2" data-linenumber="91">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:minimum_coverage) { { branch: 90, line: 100 } }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="92">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:coverage) { 50 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="93">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:expected_state) { &#39;bad&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="94">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="95">
             <span class="hits">1</span>
             
 
             
-
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(nil)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="92">
-            <span class="hits">1</span>
+              
             
 
-            
-
-            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="93">
-            
-            
-
-            
-
-            <code class="ruby">                                           cov: &#39;90%&#39;, state: &#39;unknown&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="94">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="95">
-            
-            
-
-            
-
-            <code class="ruby">                              cov: &#39;90%&#39;, state: &#39;unknown&#39;, mock: image_mock)</code>
+            <code class="ruby">        it &#39;is bad&#39; do</code>
           </li>
         </div>
       
@@ -3039,8 +3639,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        result = mock_result(90, &#39;library&#39; =&gt; mock_result_group(90))</code>
+            <code class="ruby">          mock_repo_badge_image(cov: &quot;#{coverage}%&quot;, state: expected_state)</code>
           </li>
         </div>
       
@@ -3050,19 +3652,23 @@
             
 
             
+              
+            
 
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
+            <code class="ruby">          result = mock_result(coverage)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="98">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="98">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      end</code>
+            
+              
+            
+
+            <code class="ruby">          subject.format(result)</code>
           </li>
         </div>
       
@@ -3072,30 +3678,36 @@
             
 
             
+              
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="100">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="101">
+            
+            
+
+            
+              
+            
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="100">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      it do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="101">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return({})</code>
           </li>
         </div>
       
@@ -3105,52 +3717,62 @@
             
 
             
+              
+            
 
-            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
+            <code class="ruby">      context &#39;when coverage is lower than required with groups&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="103">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="103">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">                                           cov: &#39;90%&#39;, state: &#39;unknown&#39;)</code>
+            
+              
+            
+
+            <code class="ruby">        let(:minimum_coverage) { { branch: 91, line: 100 } }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="104">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="104">
+            <span class="hits">2</span>
             
 
             
+              
+            
 
-            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+            <code class="ruby">        let(:coverage) { 90 }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="105">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="105">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">                              cov: &#39;90%&#39;, state: &#39;unknown&#39;, mock: image_mock)</code>
+            
+              
+            
+
+            <code class="ruby">        let(:expected_state) { &#39;bad&#39; }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="106">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="106">
+            
             
 
             
+              
+            
 
-            <code class="ruby">        result = mock_result(90, &#39;library&#39; =&gt; mock_result_group(90))</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3160,19 +3782,23 @@
             
 
             
+              
+            
 
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
+            <code class="ruby">        it &#39;is bad&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="108">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="108">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      end</code>
+            
+              
+            
+
+            <code class="ruby">          image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
           </li>
         </div>
       
@@ -3182,8 +3808,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">    end</code>
+            <code class="ruby">                                             cov: &quot;#{coverage}%&quot;,</code>
           </li>
         </div>
       
@@ -3193,8 +3821,10 @@
             
 
             
+              
+            
 
-            <code class="ruby"></code>
+            <code class="ruby">                                             state: expected_state)</code>
           </li>
         </div>
       
@@ -3204,30 +3834,36 @@
             
 
             
+              
+            
 
-            <code class="ruby">    context &#39;mixed result&#39; do</code>
+            <code class="ruby">          mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="112">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="112">
+            
             
 
             
+              
+            
 
-            <code class="ruby">      it do</code>
+            <code class="ruby">                                cov: &quot;#{coverage}%&quot;, state: expected_state,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="113">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="113">
+            
             
 
             
+              
+            
 
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(90)</code>
+            <code class="ruby">                                mock: image_mock)</code>
           </li>
         </div>
       
@@ -3237,8 +3873,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
+            <code class="ruby">          result = mock_result(coverage,</code>
           </li>
         </div>
       
@@ -3248,8 +3886,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">                                           cov: &#39;89%&#39;, state: &#39;bad&#39;)</code>
+            <code class="ruby">                               &#39;library&#39; =&gt; mock_result_group(coverage))</code>
           </li>
         </div>
       
@@ -3259,8 +3899,10 @@
             
 
             
+              
+            
 
-            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+            <code class="ruby">          subject.format(result)</code>
           </li>
         </div>
       
@@ -3270,38 +3912,20 @@
             
 
             
+              
+            
 
-            <code class="ruby">                              cov: &#39;90%&#39;, state: &#39;good&#39;, mock: image_mock)</code>
+            <code class="ruby">        end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="118">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        result = mock_result(89, &#39;library&#39; =&gt; mock_result_group(90))</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="119">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="120">
+          <li class="never" data-hits="" data-linenumber="118">
             
             
 
+            
+              
             
 
             <code class="ruby">      end</code>
@@ -3309,10 +3933,12 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="121">
+          <li class="never" data-hits="" data-linenumber="119">
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -3320,46 +3946,80 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="122">
+          <li class="covered" data-hits="1" data-linenumber="120">
             <span class="hits">1</span>
             
 
             
+              
+            
 
-            <code class="ruby">      it do</code>
+            <code class="ruby">      context &#39;when coverage is greater than or equal to that required&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="123">
+          <li class="covered" data-hits="2" data-linenumber="121">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:minimum_coverage) { { branch: 100, line: 10 } }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="122">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:coverage) { 100 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="123">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:expected_state) { &#39;good&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="124">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="125">
             <span class="hits">1</span>
             
 
             
-
-            <code class="ruby">        allow(SimpleCov).to receive(:minimum_coverage).and_return(line: 90)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="124">
-            <span class="hits">1</span>
+              
             
 
-            
-
-            <code class="ruby">        image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="125">
-            
-            
-
-            
-
-            <code class="ruby">                                           cov: &#39;89%&#39;, state: &#39;bad&#39;)</code>
+            <code class="ruby">        it &#39;is good&#39; do</code>
           </li>
         </div>
       
@@ -3369,19 +4029,23 @@
             
 
             
+              
+            
 
-            <code class="ruby">        mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+            <code class="ruby">          mock_repo_badge_image(cov: &#39;100%&#39;, state: expected_state)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="127">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="127">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">                              cov: &#39;90%&#39;, state: &#39;good&#39;, mock: image_mock)</code>
+            
+              
+            
+
+            <code class="ruby">          result = mock_result(coverage)</code>
           </li>
         </div>
       
@@ -3391,19 +4055,23 @@
             
 
             
+              
+            
 
-            <code class="ruby">        result = mock_result(89, &#39;library&#39; =&gt; mock_result_group(90))</code>
+            <code class="ruby">          subject.format(result)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="129">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="129">
+            
             
 
             
+              
+            
 
-            <code class="ruby">        expect(subject.format(result)).to be_truthy</code>
+            <code class="ruby">        end</code>
           </li>
         </div>
       
@@ -3412,6 +4080,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">      end</code>
@@ -3424,16 +4094,891 @@
             
 
             
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="132">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">      context &#39;when coverage is greater than or equal to that required with groups&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="133">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:minimum_coverage) { { branch: 100, line: 10 } }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="134">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:coverage) { 100 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="135">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:expected_state) { &#39;good&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="136">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="137">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        it &#39;is good&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="138">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="139">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                             cov: &quot;#{coverage}%&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="140">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="141">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                cov: &quot;#{coverage}%&quot;, mock: image_mock)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="142">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          result = mock_result(coverage, &#39;library&#39; =&gt; mock_result_group(coverage))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="143">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          subject.format(result)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="144">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="145">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="146">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="147">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">      context &#39;when minimum coverage is not set&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="148">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:minimum_coverage) { {} }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="149">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:coverage) { 90 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="150">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:expected_state) { &#39;unknown&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="151">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="152">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        it &#39;is unknown&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="153">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          mock_repo_badge_image(cov: &quot;#{coverage}%&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="154">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                state: expected_state)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="155">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          result = mock_result(coverage)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="156">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          expect(subject.format(result)).to be_truthy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="157">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="158">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="159">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="160">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">      context &#39;when minimum coverage is not set with groups&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="161">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:minimum_coverage) { {} }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="162">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:coverage) { 90 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="163">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:expected_state) { &#39;unknown&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="164">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="165">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        it &#39;is unknown&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="166">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="167">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                             cov: &quot;#{coverage}%&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="168">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                             state: expected_state)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="169">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="170">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                cov: &quot;#{coverage}%&quot;, state: expected_state,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="171">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                mock: image_mock)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="172">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          result = mock_result(coverage,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="173">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                               &#39;library&#39; =&gt; mock_result_group(coverage))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="174">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          expect(subject.format(result)).to be_truthy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="175">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="176">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="177">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="178">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">      context &#39;when global coverage is lower but group coverage is as required&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="179">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:minimum_coverage) { { branch: 90, line: 10 } }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="180">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:global_coverage) { 89 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="181">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:group_coverage) { 90 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="182">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:global_state) { &#39;bad&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="183">
+            <span class="hits">2</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        let(:group_state) { &#39;good&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="184">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="185">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">        it &#39;is mixed&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="186">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          image_mock = mock_repo_badge_image(title: &#39;total&#39;, name: &#39;total&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="187">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                             cov: &quot;#{global_coverage}%&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="188">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                             state: global_state)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="189">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          mock_repo_badge_image(title: &#39;library&#39;, name: &#39;library&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="190">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                cov: &quot;#{group_coverage}%&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="191">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                state: group_state,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="192">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                                mock: image_mock)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="193">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          result = mock_result(global_coverage,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="194">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">                               &#39;library&#39; =&gt; mock_result_group(group_coverage))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="195">
+            <span class="hits">1</span>
+            
+
+            
+              
+            
+
+            <code class="ruby">          subject.format(result)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="196">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="197">
+            
+            
+
+            
+              
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="198">
+            
+            
+
+            
+              
+            
 
             <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="132">
+          <li class="never" data-hits="" data-linenumber="199">
             
             
 
+            
+              
             
 
             <code class="ruby">  end</code>
@@ -3441,10 +4986,12 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="133">
+          <li class="never" data-hits="" data-linenumber="200">
             
             
 
+            
+              
             
 
             <code class="ruby">end</code>
@@ -3468,6 +5015,14 @@
     </h4>
 
     
+      <h4>
+        <span class="green">
+  100.0%
+</span>
+
+        branches covered
+      </h4>
+    
 
     <div class="t-line-summary">
       <b>25</b> relevant lines.
@@ -3475,6 +5030,12 @@
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
+    
+      <div class="t-branch-summary">
+          <span><b>0</b> total branches, </span>
+          <span class="green"><b>0</b> branches covered</span> and
+          <span class="red"><b>0</b> branches missed.</span>
+      </div>
     
 
   </div>
@@ -3488,6 +5049,8 @@
             
 
             
+              
+            
 
             <code class="ruby"># frozen_string_literal: true</code>
           </li>
@@ -3498,6 +5061,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -3510,6 +5075,8 @@
             
 
             
+              
+            
 
             <code class="ruby">module TestSimpleCovSmallBadge</code>
           </li>
@@ -3520,6 +5087,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">  module Mocks</code>
@@ -3532,6 +5101,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    # rubocop:disable Metrics/ParameterLists</code>
           </li>
@@ -3542,6 +5113,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">    def mock_repo_badge_image(cov: 100, name: &#39;total&#39;,</code>
@@ -3554,6 +5127,8 @@
             
 
             
+              
+            
 
             <code class="ruby">                              title: &#39;total&#39;,</code>
           </li>
@@ -3564,6 +5139,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">                              state: &#39;good&#39;,</code>
@@ -3576,6 +5153,8 @@
             
 
             
+              
+            
 
             <code class="ruby">                              config: {},</code>
           </li>
@@ -3586,6 +5165,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">                              mock: instance_double(&#39;Image&#39;))</code>
@@ -3598,6 +5179,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      config = map_config_options(config, state)</code>
           </li>
@@ -3608,6 +5191,8 @@
             <span class="hits">22</span>
             
 
+            
+              
             
 
             <code class="ruby">      allow(RepoSmallBadge::Image).to receive(:new)</code>
@@ -3620,6 +5205,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        .with(config).and_return(mock)</code>
           </li>
@@ -3630,6 +5217,8 @@
             <span class="hits">22</span>
             
 
+            
+              
             
 
             <code class="ruby">      allow(mock).to receive(:config_merge).with(config).and_return(config)</code>
@@ -3642,6 +5231,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      allow(mock).to receive(:badge).with(name, title, cov)</code>
           </li>
@@ -3652,6 +5243,8 @@
             <span class="hits">22</span>
             
 
+            
+              
             
 
             <code class="ruby">      mock</code>
@@ -3664,6 +5257,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    end</code>
           </li>
@@ -3674,6 +5269,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">    # rubocop:enable Metrics/ParameterLists</code>
@@ -3686,6 +5283,8 @@
             
 
             
+              
+            
 
             <code class="ruby"></code>
           </li>
@@ -3696,6 +5295,8 @@
             <span class="hits">1</span>
             
 
+            
+              
             
 
             <code class="ruby">    def map_config_options(config_hash, state)</code>
@@ -3708,6 +5309,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      hash = {}</code>
           </li>
@@ -3718,6 +5321,8 @@
             <span class="hits">22</span>
             
 
+            
+              
             
 
             <code class="ruby">      SimpleCovSmallBadge::Configuration.options.merge(config_hash)</code>
@@ -3730,6 +5335,8 @@
             
 
             
+              
+            
 
             <code class="ruby">                                        .map do |key, value|</code>
           </li>
@@ -3740,6 +5347,8 @@
             <span class="hits">462</span>
             
 
+            
+              
             
 
             <code class="ruby">        key = key.to_s</code>
@@ -3752,6 +5361,8 @@
             
 
             
+              
+            
 
             <code class="ruby">                 .sub(/^coverage_background_#{state}/, &#39;value_background&#39;)</code>
           </li>
@@ -3762,6 +5373,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">                 .to_sym</code>
@@ -3774,6 +5387,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        key = key.to_s.sub(/^coverage_/, &#39;value_&#39;).to_sym</code>
           </li>
@@ -3784,6 +5399,8 @@
             <span class="hits">462</span>
             
 
+            
+              
             
 
             <code class="ruby">        hash[key] = value</code>
@@ -3796,6 +5413,8 @@
             
 
             
+              
+            
 
             <code class="ruby">      end</code>
           </li>
@@ -3806,6 +5425,8 @@
             <span class="hits">22</span>
             
 
+            
+              
             
 
             <code class="ruby">      hash</code>
@@ -3818,6 +5439,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    end</code>
           </li>
@@ -3828,6 +5451,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -3840,16 +5465,20 @@
             
 
             
+              
+            
 
             <code class="ruby">    def mock_result(total_cov, groups_hash = {})</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="34">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="34">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      result_double = instance_double(&#39;Result&#39;)</code>
@@ -3857,10 +5486,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="35">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="35">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      allow(result_double)</code>
@@ -3873,6 +5504,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        .to receive_message_chain(&#39;source_files.covered_percent&#39;)</code>
           </li>
@@ -3884,16 +5517,20 @@
             
 
             
+              
+            
 
             <code class="ruby">        .and_return(total_cov)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="38">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="38">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      allow(result_double).to receive(&#39;groups&#39;).and_return(groups_hash)</code>
@@ -3901,10 +5538,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="39">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="13" data-linenumber="39">
+            <span class="hits">13</span>
             
 
+            
+              
             
 
             <code class="ruby">      result_double</code>
@@ -3917,6 +5556,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    end</code>
           </li>
@@ -3927,6 +5568,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby"></code>
@@ -3939,16 +5582,20 @@
             
 
             
+              
+            
 
             <code class="ruby">    def mock_result_group(cov, strength = 1)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="43">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="9" data-linenumber="43">
+            <span class="hits">9</span>
             
 
+            
+              
             
 
             <code class="ruby">      group_double = instance_double(&#39;Group&#39;)</code>
@@ -3956,10 +5603,12 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="44">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="9" data-linenumber="44">
+            <span class="hits">9</span>
             
 
+            
+              
             
 
             <code class="ruby">      allow(group_double)</code>
@@ -3972,6 +5621,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        .to receive(&#39;covered_percent&#39;)</code>
           </li>
@@ -3983,16 +5634,20 @@
             
 
             
+              
+            
 
             <code class="ruby">        .and_return(cov)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="47">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="9" data-linenumber="47">
+            <span class="hits">9</span>
             
 
+            
+              
             
 
             <code class="ruby">      allow(group_double)</code>
@@ -4005,6 +5660,8 @@
             
 
             
+              
+            
 
             <code class="ruby">        .to receive(&#39;covered_strength&#39;)</code>
           </li>
@@ -4016,16 +5673,20 @@
             
 
             
+              
+            
 
             <code class="ruby">        .and_return(strength)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="50">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="9" data-linenumber="50">
+            <span class="hits">9</span>
             
 
+            
+              
             
 
             <code class="ruby">      group_double</code>
@@ -4038,6 +5699,8 @@
             
 
             
+              
+            
 
             <code class="ruby">    end</code>
           </li>
@@ -4049,6 +5712,8 @@
             
 
             
+              
+            
 
             <code class="ruby">  end</code>
           </li>
@@ -4059,6 +5724,8 @@
             
             
 
+            
+              
             
 
             <code class="ruby">end</code>

@@ -46,7 +46,7 @@ module SimpleCovSmallBadge
 
     def line_coverage_minimum
       minimums = SimpleCov.minimum_coverage
-      minimums.is_a?(Hash) ? minimums[SimpleCov.primary_coverage] : minimums
+      minimums[SimpleCov.primary_coverage]
     end
 
     def map_image_config(state)

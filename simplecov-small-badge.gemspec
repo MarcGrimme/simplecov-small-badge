@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '~> 13'
   s.add_development_dependency 'rspec', '~> 3.8'
   s.add_development_dependency 'rubocop', '~> 1.0'
-  s.add_development_dependency 'rubycritic', '~> 4.1'
+  s.add_development_dependency 'rubycritic', '~> 5.0'
   s.add_development_dependency 'rubycritic-small-badge', '~> 0.2'
 
   s.files         = `git ls-files`.split("\n")
